@@ -5148,6 +5148,38 @@
         "operation" : "cs-validate-code",
         "request" : "bugs/validate-x12-bad-request.json",
         "response" : "bugs/validate-x12-bad-response.json"
+      },
+      {
+        "name" : "3166-a",
+        "full-set" : true,
+        "description" : "Check user assigned codes are valid",
+        "operation" : "cs-validate-code",
+        "request" : "bugs/validate-3166-a-request.json",
+        "response" : "bugs/validate-3166-a-response.json"
+      },
+      {
+        "name" : "3166-b",
+        "full-set" : true,
+        "description" : "Check user assigned codes can get display from a supplement",
+        "operation" : "cs-validate-code",
+        "request" : "bugs/validate-3166-b-request.json",
+        "response" : "bugs/validate-3166-b-response.json"
+      },
+      {
+        "name" : "3166-c",
+        "full-set" : true,
+        "description" : "But base names are still valid",
+        "operation" : "cs-validate-code",
+        "request" : "bugs/validate-3166-c-request.json",
+        "response" : "bugs/validate-3166-c-response.json"
+      },
+      {
+        "name" : "3166-d",
+        "full-set" : true,
+        "description" : "Check that wrong displays on user assigned codes are just a hint",
+        "operation" : "cs-validate-code",
+        "request" : "bugs/validate-3166-d-request.json",
+        "response" : "bugs/validate-3166-d-response.json"
       }
     ]
   },{

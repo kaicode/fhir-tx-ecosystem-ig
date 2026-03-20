@@ -1,0 +1,49 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "code",
+    "valueCode" : "XY"
+  },
+  {
+    "name" : "display",
+    "valueString" : "User-assigned"
+  },
+  {
+    "name" : "issues",
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "Display_Name_Not_Fixed_use_Supplement"
+        }],
+        "severity" : "information",
+        "code" : "invalid",
+        "details" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+            "code" : "invalid-display"
+          }],
+          "text" : "The display name 'Weird Country' is not a known display name for urn:iso:std:iso:3166#XY. Known display is 'User-assigned' (en) (for the language(s) '--'). Use a supplement to define displays for user assigned codes"
+        },
+        "expression" : ["display"]
+      }]
+    }
+  },
+  {
+    "name" : "message",
+    "valueString" : "The display name 'Weird Country' is not a known display name for urn:iso:std:iso:3166#XY. Known display is 'User-assigned' (en) (for the language(s) '--'). Use a supplement to define displays for user assigned codes"
+  },
+  {
+    "name" : "result",
+    "valueBoolean" : true
+  },
+  {
+    "name" : "system",
+    "valueUri" : "urn:iso:std:iso:3166"
+  },
+  {
+    "name" : "version",
+    "valueString" : "2018"
+  }]
+}

@@ -1,0 +1,498 @@
+{
+  "$optional-properties$" : ["id", "date", "publisher", "compose"],
+  "resourceType" : "ValueSet",
+  "id" : "$id$",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "$uuid$",
+    "timestamp" : "$instant$",
+    "total" : 96,
+    "parameter" : [{
+      "name" : "used-codesystem",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "10674791000119101",
+      "display" : "Acute exacerbation of intermittent allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10674991000119104",
+      "display" : "Intermittent allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10675391000119101",
+      "display" : "Severe controlled persistent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10675431000119106",
+      "display" : "Severe persistent allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10675471000119109",
+      "display" : "Acute severe exacerbation of severe persistent allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10675751000119107",
+      "display" : "Severe uncontrolled persistent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10675871000119106",
+      "display" : "Mild persistent allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10675911000119109",
+      "display" : "Acute severe exacerbation of mild persistent allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10676271000119104",
+      "display" : "Acute exacerbation of moderate persistent allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10676391000119108",
+      "display" : "Moderate persistent allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10676431000119103",
+      "display" : "Acute severe exacerbation of moderate persistent allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10692681000119108",
+      "display" : "Aspirin exacerbated respiratory disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10692721000119102",
+      "display" : "Chronic obstructive asthma co-occurrent with acute exacerbation of asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10692761000119107",
+      "display" : "Asthma-chronic obstructive pulmonary disease overlap syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10742121000119104",
+      "display" : "Asthma in childbirth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "11641008",
+      "display" : "Millers' asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "12428000",
+      "display" : "Intrinsic asthma without status asthmaticus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1290026000",
+      "display" : "Uncontrolled asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "16584951000119101",
+      "display" : "Oral steroid-dependent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1741000119102",
+      "display" : "Intermittent asthma uncontrolled"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1751000119100",
+      "display" : "Acute exacerbation of chronic obstructive airways disease with asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "18041002",
+      "display" : "Printers' asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "195949008",
+      "display" : "Chronic asthmatic bronchitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "195967001",
+      "display" : "Airway hyperreactivity"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "195977004",
+      "display" : "Mixed asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "19849005",
+      "display" : "Meat-wrappers' asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "225057002",
+      "display" : "Brittle asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "233678006",
+      "display" : "Childhood asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "233679003",
+      "display" : "Late onset asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "233683003",
+      "display" : "Hay fever with asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "233687002",
+      "display" : "Colophony asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "233688007",
+      "display" : "Sulfite-induced asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "233691007",
+      "display" : "Asthmatic pulmonary eosinophilia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2360001000004109",
+      "display" : "Steroid dependent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "266361008",
+      "display" : "Intrinsic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "281239006",
+      "display" : "Exacerbation of asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "34015007",
+      "display" : "Bakers' asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "370218001",
+      "display" : "Mild asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "370219009",
+      "display" : "Moderate asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "370220003",
+      "display" : "Occasional asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "370221004",
+      "display" : "Severe asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "389145006",
+      "display" : "Allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "401000119107",
+      "display" : "Asthma with irreversible airway obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "404804003",
+      "display" : "Platinum asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "404806001",
+      "display" : "Cheese-makers' asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "404808000",
+      "display" : "Isocyanate induced asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "405944004",
+      "display" : "Asthmatic bronchitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "407674008",
+      "display" : "Aspirin-induced asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "409663006",
+      "display" : "Cough variant asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "41553006",
+      "display" : "Detergent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "418395004",
+      "display" : "Tea-makers' asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "423889005",
+      "display" : "Non-IgE mediated allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "424643009",
+      "display" : "IgE-mediated allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "425969006",
+      "display" : "Exacerbation of intermittent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "426656000",
+      "display" : "Severe persistent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "426979002",
+      "display" : "Mild persistent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "427295004",
+      "display" : "Moderate persistent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "427603009",
+      "display" : "Intermittent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "427679007",
+      "display" : "Mild intermittent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "442025000",
+      "display" : "Acute exacerbation of chronic asthmatic bronchitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "445427006",
+      "display" : "Seasonal asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "55570000",
+      "display" : "Asthma without status asthmaticus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "56968009",
+      "display" : "Wood asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "57607007",
+      "display" : "Occupational asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "59786004",
+      "display" : "Weavers' cough"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "63088003",
+      "display" : "Extrinsic asthma without status asthmaticus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "703953004",
+      "display" : "Dermatophagoides pteronyssinus allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "703954005",
+      "display" : "Dermatophagoides farinae allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "707444001",
+      "display" : "Uncomplicated asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "707445000",
+      "display" : "Exacerbation of mild persistent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "707446004",
+      "display" : "Exacerbation of moderate persistent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "707447008",
+      "display" : "Exacerbation of severe persistent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "707511009",
+      "display" : "Uncomplicated mild persistent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "707512002",
+      "display" : "Uncomplicated moderate persistent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "707513007",
+      "display" : "Uncomplicated severe persistent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "707979007",
+      "display" : "Acute severe exacerbation of severe persistent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "707980005",
+      "display" : "Acute severe exacerbation of moderate persistent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "707981009",
+      "display" : "Acute severe exacerbation of mild persistent asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "708090002",
+      "display" : "Acute severe exacerbation of asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "708093000",
+      "display" : "Acute exacerbation of extrinsic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "708094006",
+      "display" : "Acute exacerbation of intrinsic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "708095007",
+      "display" : "Acute severe exacerbation of extrinsic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "708096008",
+      "display" : "Acute severe exacerbation of intrinsic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "72301000119103",
+      "display" : "Asthma in pregnancy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "733858005",
+      "display" : "Acute severe refractory exacerbation of asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "734904007",
+      "display" : "Life threatening acute exacerbation of asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "734905008",
+      "display" : "Moderate acute exacerbation of asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "735588005",
+      "display" : "Uncomplicated allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "735589002",
+      "display" : "Uncomplicated non-allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "762521001",
+      "display" : "Exacerbation of allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "782513000",
+      "display" : "Acute severe exacerbation of allergic asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "782520007",
+      "display" : "Exacerbation of allergic asthma due to infection"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "786836003",
+      "display" : "Near fatal asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "829976001",
+      "display" : "Thunderstorm asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "92807009",
+      "display" : "Chemical-induced asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "93432008",
+      "display" : "Drug-induced asthma"
+    }]
+  }
+}

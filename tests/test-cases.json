@@ -4048,7 +4048,7 @@
     "setup" : [ "tx.fhir.org/valueset-all.json", "tx.fhir.org/valueset-enumerated-bad.json", "tx.fhir.org/valueset-enumerated.json", "tx.fhir.org/valueset-filter-prop-component.json", "tx.fhir.org/valueset-filter-prop-method.json", "tx.fhir.org/valueset-filter-prop-component-str.json", 
       "tx.fhir.org/valueset-filter-prop-order-obs.json", "tx.fhir.org/valueset-concept-is-a.json", "tx.fhir.org/valueset-filter-copyright.json", "tx.fhir.org/valueset-filter-status.json", "tx.fhir.org/valueset-filter-class-regex.json", 
       "tx.fhir.org/valueset-filter-scale-type.json", "tx.fhir.org/valueset-filter-list.json", "tx.fhir.org/valueset-filter-prop-dockind-exists.json", "tx.fhir.org/valueset-filter-classtype.json", 
-      "tx.fhir.org/valueset-filter-answers-for1.json", "tx.fhir.org/valueset-filter-answers-for2.json", "tx.fhir.org/valueset-filter-answer-list.json",
+      "tx.fhir.org/valueset-filter-answers-for1.json", "tx.fhir.org/valueset-filter-answers-for2.json", "tx.fhir.org/valueset-filter-answer-list.json", "tx.fhir.org/valueset-filter-parent.json",
       "tx.fhir.org/codesystem-loinc-supplement.json"],
     "tests" : [
       {
@@ -4172,6 +4172,12 @@
         "operation" : "expand",
         "request" : "tx.fhir.org/loinc-expand-status-request-parameters.json",
         "response" : "tx.fhir.org/loinc-expand-status-response-valueSet.json"
+      },{
+        "name" : "loinc-expand-parent",
+        "description" : "to be provided",
+        "operation" : "expand",
+        "request" : "tx.fhir.org/loinc-expand-parent-request-parameters.json",
+        "response" : "tx.fhir.org/loinc-expand-parent-response-valueSet.json"
       },{
         "name" : "loinc-expand-class-regex",
         "description" : "to be provided",
@@ -4364,6 +4370,103 @@
         "operation" : "expand",
         "request" : "tx.fhir.org/loinc-expand-filter-answer-list-request-parameters.json",
         "response" : "tx.fhir.org/loinc-expand-filter-answer-list-response-valueSet.json"
+      },{
+        "name" : "snomed-expand-active",
+        "description" : "Test the inactive filter",
+        "operation" : "expand",
+        "request" : "tx.fhir.org/snomed-expand-active-request-parameters.json",
+        "response" : "tx.fhir.org/snomed-expand-active-response-valueSet.json"
+      },{
+        "name" : "snomed-expand-inactive",
+        "description" : "Test the inactive filter",
+        "operation" : "expand",
+        "request" : "tx.fhir.org/snomed-expand-inactive-request-parameters.json",
+        "response" : "tx.fhir.org/snomed-expand-inactive-response-valueSet.json"
+      },{
+        "name" : "snomed-expand-inactive2",
+        "description" : "Test the inactive filter",
+        "operation" : "expand",
+        "http-code" : "4xx",
+        "request" : "tx.fhir.org/snomed-expand-inactive2-request-parameters.json",
+        "response" : "tx.fhir.org/snomed-expand-inactive2-response-valueSet.json"
+      },{
+        "name" : "snomed-expand-moduleid-1",
+        "description" : "Test ModuleId filter",
+        "operation" : "expand",
+        "request" : "tx.fhir.org/snomed-expand-moduleid-1-request.json",
+        "response" : "tx.fhir.org/snomed-expand-moduleid-1-response.json"
+      },{
+        "name" : "snomed-expand-moduleid-2",
+        "description" : "Test ModuleId filter",
+        "operation" : "expand",
+        "request" : "tx.fhir.org/snomed-expand-moduleid-2-request.json",
+        "response" : "tx.fhir.org/snomed-expand-moduleid-2-response.json"
+      },{
+        "name" : "snomed-expand-moduleid-3",
+        "description" : "Test ModuleId filter",
+        "operation" : "expand",
+        "request" : "tx.fhir.org/snomed-expand-moduleid-3-request.json",
+        "response" : "tx.fhir.org/snomed-expand-moduleid-3-response.json"
+      },{
+        "name" : "snomed-expand-moduleid-4",
+        "description" : "Test ModuleId filter",
+        "operation" : "expand",
+        "request" : "tx.fhir.org/snomed-expand-moduleid-4-request.json",
+        "response" : "tx.fhir.org/snomed-expand-moduleid-4-response.json"
+      },{
+        "name" : "snomed-expand-property-1",
+        "description" : "Test Property filter",
+        "operation" : "expand",
+        "request" : "tx.fhir.org/snomed-expand-property-1-request.json",
+        "response" : "tx.fhir.org/snomed-expand-property-1-response.json"
+      },{
+        "name" : "snomed-validate-active-bad",
+        "description" : "Test inactive filter",
+        "operation" : "validate-code",
+        "request" : "tx.fhir.org/snomed-validate-active-bad-request.json",
+        "response" : "tx.fhir.org/snomed-validate-active-bad-response.json"
+      },{
+        "name" : "snomed-validate-active-good",
+        "description" : "Test inactive filter",
+        "operation" : "validate-code",
+        "request" : "tx.fhir.org/snomed-validate-active-good-request.json",
+        "response" : "tx.fhir.org/snomed-validate-active-good-response.json"
+      },{
+        "name" : "snomed-validate-inactive-bad",
+        "description" : "Test inactive filter",
+        "operation" : "validate-code",
+        "request" : "tx.fhir.org/snomed-validate-inactive-bad-request.json",
+        "response" : "tx.fhir.org/snomed-validate-inactive-bad-response.json"
+      },{
+        "name" : "snomed-validate-inactive-good",
+        "description" : "Test inactive filter",
+        "operation" : "validate-code",
+        "request" : "tx.fhir.org/snomed-validate-inactive-good-request.json",
+        "response" : "tx.fhir.org/snomed-validate-inactive-good-response.json"
+      },{
+        "name" : "snomed-validate-moduleid-bad",
+        "description" : "Test moduleid filter",
+        "operation" : "validate-code",
+        "request" : "tx.fhir.org/snomed-validate-moduleid-bad-request.json",
+        "response" : "tx.fhir.org/snomed-validate-moduleid-bad-response.json"
+      },{
+        "name" : "snomed-validate-moduleid-good",
+        "description" : "Test moduleid filter",
+        "operation" : "validate-code",
+        "request" : "tx.fhir.org/snomed-validate-moduleid-good-request.json",
+        "response" : "tx.fhir.org/snomed-validate-moduleid-good-response.json"
+      },{
+        "name" : "snomed-validate-property-bad",
+        "description" : "Test Property filter",
+        "operation" : "validate-code",
+        "request" : "tx.fhir.org/snomed-validate-property-bad-request.json",
+        "response" : "tx.fhir.org/snomed-validate-property-bad-response.json"
+      },{
+        "name" : "snomed-validate-property-good",
+        "description" : "Test Property filter",
+        "operation" : "validate-code",
+        "request" : "tx.fhir.org/snomed-validate-property-good-request.json",
+        "response" : "tx.fhir.org/snomed-validate-property-good-response.json"
       }
     ]
   },{
@@ -5151,7 +5254,6 @@
       },
       {
         "name" : "3166-a",
-        "full-set" : true,
         "description" : "Check user assigned codes are valid",
         "operation" : "cs-validate-code",
         "request" : "bugs/validate-3166-a-request.json",
@@ -5159,7 +5261,6 @@
       },
       {
         "name" : "3166-b",
-        "full-set" : true,
         "description" : "Check user assigned codes can get display from a supplement",
         "operation" : "cs-validate-code",
         "request" : "bugs/validate-3166-b-request.json",
@@ -5167,7 +5268,6 @@
       },
       {
         "name" : "3166-c",
-        "full-set" : true,
         "description" : "But base names are still valid",
         "operation" : "cs-validate-code",
         "request" : "bugs/validate-3166-c-request.json",
@@ -5175,7 +5275,6 @@
       },
       {
         "name" : "3166-d",
-        "full-set" : true,
         "description" : "Check that wrong displays on user assigned codes are just a hint",
         "operation" : "cs-validate-code",
         "request" : "bugs/validate-3166-d-request.json",

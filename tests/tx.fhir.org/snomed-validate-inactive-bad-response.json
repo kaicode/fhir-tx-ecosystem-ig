@@ -2,7 +2,11 @@
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "code",
-    "valueCode" : "276885007000"
+    "valueCode" : "102613000"
+  },
+  {
+    "name" : "display",
+    "valueString" : "Localized abdominal pain"
   },
   {
     "name" : "issues",
@@ -11,16 +15,16 @@
       "issue" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
-          "valueString" : "Unknown_Code_in_Version"
+          "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
         }],
         "severity" : "error",
         "code" : "code-invalid",
         "details" : {
           "coding" : [{
             "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
-            "code" : "invalid-code"
+            "code" : "not-in-vs"
           }],
-          "text" : "Unknown code '276885007000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)"
+          "text" : "The provided code 'http://snomed.info/sct#102613000' was not found in the value set '(unidentified)'"
         },
         "expression" : ["code"]
       }]
@@ -28,7 +32,7 @@
   },
   {
     "name" : "message",
-    "valueString" : "Unknown code '276885007000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)"
+    "valueString" : "The provided code 'http://snomed.info/sct#102613000' was not found in the value set '(unidentified)'"
   },
   {
     "name" : "result",
@@ -37,5 +41,9 @@
   {
     "name" : "system",
     "valueUri" : "http://snomed.info/sct"
+  },
+  {
+    "name" : "version",
+    "valueString" : "http://snomed.info/sct/900000000000207008/version/20250201"
   }]
 }

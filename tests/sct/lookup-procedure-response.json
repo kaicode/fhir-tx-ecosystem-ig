@@ -437,6 +437,18 @@
     }]
   },
   {
+    "$optional$" : true,
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "module"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "900000000000207008"
+    }]
+  },
+  {
     "name" : "property",
     "part" : [{
       "name" : "code",

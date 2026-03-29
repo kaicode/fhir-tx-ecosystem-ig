@@ -10,18 +10,15 @@
       }
     },
     {
-      "$optional$" : true,
-      "name" : "relationship",
-      "valueCode" : "equivalent"
-    },
-    {
-      "$optional$" : true,
       "name" : "equivalence",
       "valueCode" : "equivalent"
     },
     {
-      "name" : "sourceMap",
-      "valueCanonical" : "http://hl7.org/fhir/test/ConceptMap/full"
+      "name" : "source",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/test/CodeSystem/source",
+        "code" : "code-1"
+      }
     }]
   },
   {

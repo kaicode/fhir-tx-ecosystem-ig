@@ -1,0 +1,16 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "url",
+    "valueUri" : "http://snomed.info/sct?fhir_cm=900000000000526001"
+  },{
+    "name" : "code",
+    "valueCode" : "225983005"
+  },{
+    "name": "sourceSystem",
+    "valueUri" : "http://snomed.info/sct"
+  },{
+    "name": "targetSystem",
+    "valueUri" : "http://snomed.info/sct"
+  }]
+}

@@ -3801,7 +3801,6 @@
       }
     ]
   },{
-    "disabled" : true,
     "mode" : "general",
     "name" : "translate",
     "description" : "Tests for ConceptMap.$translate",
@@ -3810,10 +3809,17 @@
     "tests" : [
       {
         "name" : "translate-1",
-        "description" : "to be provided",
+        "description" : "A very simple translation",
         "operation" : "translate",
         "request" : "translate/translate-1-request-parameters.json",
         "response" : "translate/translate-1-response-parameters.json"
+      },
+      {
+        "name" : "translate-reverse",
+        "description" : "Same translation, but in reverse",
+        "operation" : "translate",
+        "request" : "translate/translate-reverse-request-parameters.json",
+        "response" : "translate/translate-reverse-response-parameters.json"
       }
     ]
   },{
@@ -4467,6 +4473,12 @@
         "operation" : "validate-code",
         "request" : "tx.fhir.org/snomed-validate-property-good-request.json",
         "response" : "tx.fhir.org/snomed-validate-property-good-response.json"
+      },{
+        "name" : "snomed-translate",
+        "description" : "Implicit Snomed Concept Map",
+        "operation" : "translate",
+        "request" : "tx.fhir.org/snomed-translate-request.json",
+        "response" : "tx.fhir.org/snomed-translate-response.json"
       }
     ]
   },{

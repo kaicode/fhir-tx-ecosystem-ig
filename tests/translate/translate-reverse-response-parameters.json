@@ -10,6 +10,12 @@
       }
     },
     {
+      "$optional$" : true,
+      "name" : "relationship",
+      "valueCode" : "equivalent"
+    },
+    {
+      "$optional$" : true,
       "name" : "equivalence",
       "valueCode" : "equivalent"
     },

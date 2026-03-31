@@ -1,6 +1,6 @@
 # What's in here
 
-This folder contains a set of Version independent test cases for R3 - R5 that test:
+This folder contains a set of Version independent test cases for R4 and R5 that test:
 
 * simple expansion and validation against value set + code system
 * testing out versions
@@ -32,6 +32,8 @@ Other command line parameters for ```-txtests```:
 * ```-api-key {string}```: An API Key that is passed to the server in the ```Authorization``` header
 
 If the tests pass, the final output is a statement of compliance in the correct form to be used in the tested products release notes.
+
+The version is auto-determined based on the version the server end point is running.
 
 ##  Modes
 

@@ -52,6 +52,10 @@
       "valueCode" : "nl"
     },
     {
+      "name" : "source",
+      "valueCanonical" : "http://hl7.org/fhir/test/CodeSystem/supplement|0.1.1"
+    },
+    {
       "name" : "value",
       "valueString" : "ectenoot"
     }]
@@ -78,5 +82,9 @@
   {
     "name" : "system",
     "valueUri" : "http://hl7.org/fhir/test/CodeSystem/extensions"
+  },
+  {
+    "name" : "used-supplement",
+    "valueCanonical" : "http://hl7.org/fhir/test/CodeSystem/supplement|0.1.1"
   }]
 }

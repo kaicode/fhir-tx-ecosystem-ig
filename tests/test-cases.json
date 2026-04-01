@@ -4100,6 +4100,13 @@
         "response" : "tx.fhir.org/loinc-validate-code-response-parameters.json"
       },
       {
+        "name" : "loinc-validate-code-uz",
+        "description" : "to be provided",
+        "operation" : "cs-validate-code",
+        "request" : "tx.fhir.org/loinc-validate-code-uz-request-parameters.json",
+        "response" : "tx.fhir.org/loinc-validate-code-uz-response-parameters.json"
+      },
+      {
         "name" : "loinc-validate-discouraged-code",
         "description" : "to be provided",
         "operation" : "cs-validate-code",
@@ -4425,6 +4432,12 @@
         "operation" : "expand",
         "request" : "tx.fhir.org/snomed-expand-property-1-request.json",
         "response" : "tx.fhir.org/snomed-expand-property-1-response.json"
+      },{
+        "name" : "snomed-expand-property-2",
+        "description" : "Test Property filter",
+        "operation" : "expand",
+        "request" : "tx.fhir.org/snomed-expand-property-2-request.json",
+        "response" : "tx.fhir.org/snomed-expand-property-2-response.json"
       },{
         "name" : "snomed-validate-active-bad",
         "description" : "Test inactive filter",

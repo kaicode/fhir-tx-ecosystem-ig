@@ -1,0 +1,19 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "valueSet",
+    "resource" : {
+      "resourceType": "ValueSet",
+      "compose": {
+        "include": [
+          {
+            "system": "http://snomed.info/sct",
+            "filter": [                         
+                { "property": "246075003", "op": "=",    "value": "68704007"  }
+            ]
+          }
+        ]
+      }
+    }
+  }]
+}

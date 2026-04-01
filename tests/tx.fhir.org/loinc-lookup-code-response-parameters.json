@@ -279,6 +279,21 @@
     }]
   },
   {
+    "name" : "designation",
+    "part" : [{
+      "name" : "language",
+      "valueCode" : "uz"
+    },
+    {
+      "name" : "source",
+      "valueCanonical" : "https://terminology.dhp.uz/fhir/CodeSystem/loinc-supplement-uz|2.80"
+    },
+    {
+      "name" : "value",
+      "valueString" : "Qonda glyukoza miqdori"
+    }]
+  },
+  {
     "name" : "display",
     "valueString" : "Glucose [Mass/volume] in Blood"
   },
@@ -613,6 +628,14 @@
     "$optional$" : true,
     "name" : "system",
     "valueUri" : "http://loinc.org"
+  },
+  {
+    "name" : "used-supplement",
+    "valueCanonical" : "https://terminology.dhp.uz/fhir/CodeSystem/loinc-supplement-uz|2.80"
+  },
+  {
+    "name" : "used-supplement",
+    "valueCanonical" : "http://fhir.de/CodeSystem/loinc-supplement-basis|0.9.13"
   },
   {
     "name" : "version",

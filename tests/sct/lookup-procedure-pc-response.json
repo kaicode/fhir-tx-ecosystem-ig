@@ -412,6 +412,17 @@
     "name" : "property",
     "part" : [{
       "name" : "code",
+      "valueCode" : "effectiveTime"
+    },
+    {
+      "name" : "value",
+      "valueDateTime" : "2005-01-30"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
       "valueCode" : "inactive"
     },
     {
@@ -425,6 +436,10 @@
     "part" : [{
       "name" : "code",
       "valueCode" : "module"
+    },
+    {
+      "name" : "description",
+      "valueString" : "SNOMED CT core module"
     },
     {
       "name" : "value",

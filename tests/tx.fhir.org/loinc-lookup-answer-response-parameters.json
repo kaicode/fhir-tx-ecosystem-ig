@@ -17,6 +17,10 @@
       "valueCode" : "de-DE"
     },
     {
+      "name" : "source",
+      "valueCanonical" : "http://fhir.de/CodeSystem/loinc-supplement-basis|0.9.13"
+    },
+    {
       "name" : "value",
       "valueString" : "unbekannt"
     }]
@@ -2848,6 +2852,14 @@
     "$optional$" : true,
     "name" : "system",
     "valueUri" : "http://loinc.org"
+  },
+  {
+    "name" : "used-supplement",
+    "valueCanonical" : "https://terminology.dhp.uz/fhir/CodeSystem/loinc-supplement-uz|2.80"
+  },
+  {
+    "name" : "used-supplement",
+    "valueCanonical" : "http://fhir.de/CodeSystem/loinc-supplement-basis|0.9.13"
   },
   {
     "name" : "version",

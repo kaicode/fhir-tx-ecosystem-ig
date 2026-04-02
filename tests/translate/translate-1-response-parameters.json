@@ -11,17 +11,17 @@
     },
     {
       "$optional$" : true,
-      "name" : "relationship",
-      "valueCode" : "equivalent"
-    },
-    {
-      "$optional$" : true,
       "name" : "equivalence",
       "valueCode" : "equivalent"
     },
     {
-      "name" : "sourceMap",
-      "valueCanonical" : "http://hl7.org/fhir/test/ConceptMap/full"
+      "name" : "originMap",
+      "valueCanonical" : "http://hl7.org/fhir/test/ConceptMap/full|0.1.0"
+    },
+    {
+      "$optional$" : true,
+      "name" : "relationship",
+      "valueCode" : "equivalent"
     }]
   },
   {

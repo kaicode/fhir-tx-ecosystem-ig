@@ -27,7 +27,7 @@
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "http://loinc.org|2.81"
+      "valueUri" : "http://loinc.org|2.82"
     },
     {
       "$optional$" : true,
@@ -2059,12 +2059,12 @@
     {
       "system" : "http://loinc.org",
       "code" : "100346-6",
-      "display" : "Clotting time.extrinsic coagulation system activated.platelets inhibited of Blood by Rotational TEG"
+      "display" : "Clotting time of Blood by Thromboelastography.rotational.extrinsic coagulation system activated.platelets inhibited"
     },
     {
       "system" : "http://loinc.org",
       "code" : "100347-4",
-      "display" : "Clot formation.extrinsic coagulation system activated.platelets inhibited [Time] in Blood by Rotational TEG"
+      "display" : "Clot formation [Time] in Blood by Thromboelastography.rotational.extrinsic coagulation system activated.platelets inhibited"
     },
     {
       "system" : "http://loinc.org",
@@ -2489,7 +2489,7 @@
     {
       "system" : "http://loinc.org",
       "code" : "100423-3",
-      "display" : "Allergy Mushroom Mix 1 (Button + oyster + Shiitaki + chanterelle mushroom) IgG Ab [Units/volume] in Serum"
+      "display" : "Allergy Mushroom Mix 1 (Button + oyster + Shiitake + chanterelle mushroom) IgG Ab [Units/volume] in Serum"
     },
     {
       "system" : "http://loinc.org",
@@ -3764,7 +3764,11 @@
     {
       "system" : "http://loinc.org",
       "code" : "100653-5",
-      "display" : "Pure tone air conduction threshold audiometry panel"
+      "display" : "Deprecated Pure tone air conduction threshold audiometry panel",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DEPRECATED"
+      }]
     },
     {
       "system" : "http://loinc.org",

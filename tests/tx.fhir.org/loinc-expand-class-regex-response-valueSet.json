@@ -28,7 +28,7 @@
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "http://loinc.org|2.81"
+      "valueUri" : "http://loinc.org|2.82"
     },
     {
       "$optional$" : true,
@@ -407,7 +407,7 @@
     {
       "system" : "http://loinc.org",
       "code" : "101547-8",
-      "display" : "Hepatocyte Ag by paraffin 1 in Blood or Tissue Qualitative by Immune stain"
+      "display" : "Hepatocyte Paraffin 1 Ab in Blood or Tissue Qualitative by Immune stain"
     },
     {
       "system" : "http://loinc.org",

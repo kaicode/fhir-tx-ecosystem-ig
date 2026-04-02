@@ -14,6 +14,25 @@
     "name" : "designation",
     "part" : [{
       "name" : "language",
+      "valueCode" : "cs-CZ"
+    },
+    {
+      "name" : "use",
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LONG_COMMON_NAME",
+        "display" : "LONG_COMMON_NAME"
+      }
+    },
+    {
+      "name" : "value",
+      "valueString" : "Glukóza [Hmotnost/objem], systém: Krev"
+    }]
+  },
+  {
+    "name" : "designation",
+    "part" : [{
+      "name" : "language",
       "valueCode" : "de-AT"
     },
     {
@@ -639,6 +658,6 @@
   },
   {
     "name" : "version",
-    "valueString" : "2.81"
+    "valueString" : "2.82"
   }]
 }

@@ -13,14 +13,14 @@
   "expansion" : {
     "identifier" : "$uuid$",
     "timestamp" : "$instant$",
-    "total" : 429,
+    "total" : 430,
     "parameter" : [{
       "name" : "excludeNested",
       "valueBoolean" : true
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "http://loinc.org|2.81"
+      "valueUri" : "http://loinc.org|2.82"
     },
     {
       "$optional$" : true,
@@ -2195,6 +2195,11 @@
       "system" : "http://loinc.org",
       "code" : "LP443243-3",
       "display" : "Bacteria | Surgical wound | Microbiology"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LP450263-1",
+      "display" : "Bacteria | Prostatic fluid | Microbiology"
     }]
   }
 }

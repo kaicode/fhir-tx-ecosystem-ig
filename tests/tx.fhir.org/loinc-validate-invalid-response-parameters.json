@@ -21,7 +21,7 @@
             "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
             "code" : "invalid-code"
           }],
-          "text" : "Unknown code 'XX111373-9' in the CodeSystem 'http://loinc.org' version '2.81'"
+          "text" : "Unknown code 'XX111373-9' in the CodeSystem 'http://loinc.org' version '2.82'"
         },
         "location" : ["code"],
         "expression" : ["code"]
@@ -30,7 +30,7 @@
   },
   {
     "name" : "message",
-    "valueString" : "Unknown code 'XX111373-9' in the CodeSystem 'http://loinc.org' version '2.81'"
+    "valueString" : "Unknown code 'XX111373-9' in the CodeSystem 'http://loinc.org' version '2.82'"
   },
   {
     "name" : "result",
@@ -43,6 +43,6 @@
   {
     "$optional$" : "warning:version",
     "name" : "version",
-    "valueString" : "2.81"
+    "valueString" : "2.82"
   }]
 }

@@ -2,6 +2,7 @@
   "resourceType" : "ConceptMap",
   "id" : "full",
   "url" : "http://hl7.org/fhir/test/ConceptMap/full",
+  "version" : "0.1.0",
   "name" : "FullConceptMapExample",
   "title" : "Full Concept Map Example",
   "status" : "draft",

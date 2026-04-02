@@ -12,17 +12,17 @@
     },
     {
       "$optional$" : true,
-      "name" : "relationship",
-      "valueCode" : "equivalent"
-    },
-    {
-      "$optional$" : true,
       "name" : "equivalence",
       "valueCode" : "equivalent"
     },
     {
-      "name" : "sourceMap",
-      "valueCanonical" : "https://fhir-terminology.ohdsi.org/ConceptMap/44819102"
+      "name" : "originMap",
+      "valueCanonical" : "https://fhir-terminology.ohdsi.org/ConceptMap/44819102|"
+    },
+    {
+      "$optional$" : true,
+      "name" : "relationship",
+      "valueCode" : "equivalent"
     }]
   },
   {

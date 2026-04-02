@@ -16,7 +16,7 @@
     "total" : 2,
     "parameter" : [{
       "name" : "used-codesystem",
-      "valueUri" : "http://loinc.org|2.81"
+      "valueUri" : "http://loinc.org|2.82"
     },
     {
       "$optional$" : true,

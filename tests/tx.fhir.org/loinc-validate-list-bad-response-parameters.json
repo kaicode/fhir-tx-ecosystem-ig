@@ -25,7 +25,7 @@
                   "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
                   "code" : "not-in-vs"
                 }],
-              "text" : "The provided code 'http://loinc.org#100746-7' was not found in the value set 'http://loinc.org/vs/LL361-7|2.81'"
+              "text" : "The provided code 'http://loinc.org#100746-7' was not found in the value set 'http://loinc.org/vs/LL361-7|2.82'"
             },
             "location" : ["Coding.code"],
             "expression" : ["Coding.code"]
@@ -34,7 +34,7 @@
     },
     {
       "name" : "message",
-      "valueString" : "The provided code 'http://loinc.org#100746-7' was not found in the value set 'http://loinc.org/vs/LL361-7|2.81'"
+      "valueString" : "The provided code 'http://loinc.org#100746-7' was not found in the value set 'http://loinc.org/vs/LL361-7|2.82'"
     },
     {
       "name" : "result",
@@ -46,7 +46,7 @@
     },
     {
       "name" : "version",
-      "valueString" : "2.81",
+      "valueString" : "2.82",
       "$optional$" : "warning:version"
     }]
 }

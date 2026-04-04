@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-unk-3b",
+  "version": "1.0.0",
+  "name": "CompareUnk3B",
+  "title": "Unknown - unknown code system (other codes)",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/unknown-cs",
+        "concept": [
+          {
+            "code": "Y"
+          },
+          {
+            "code": "Z"
+          }
+        ]
+      }
+    ]
+  }
+}

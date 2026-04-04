@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-eq-1b",
+  "version": "1.0.0",
+  "name": "CompareEq1B",
+  "title": "Equivalent - is-a A (copy 2)",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A"
+          }
+        ]
+      }
+    ]
+  }
+}

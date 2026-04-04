@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-eq-6b",
+  "version": "1.0.0",
+  "name": "CompareEq6B",
+  "title": "Equivalent - imports in order 2",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/test/ValueSet/compare-eq-6-child2"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/test/ValueSet/compare-eq-6-child1"
+        ]
+      }
+    ]
+  }
+}

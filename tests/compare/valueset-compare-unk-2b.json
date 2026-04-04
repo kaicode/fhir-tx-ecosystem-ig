@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-unk-2b",
+  "version": "1.0.0",
+  "name": "CompareUnk2B",
+  "title": "Unknown - SNOMED enum {73211009}",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "73211009"
+          }
+        ]
+      }
+    ]
+  }
+}

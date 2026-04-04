@@ -1,0 +1,310 @@
+{
+  "name": "compare",
+  "description": "Tests for $compare operation - comparing two value sets to determine their relationship (equivalent, subset, superset, overlap, disjoint, unknown)",
+  "setup": [
+    "compare/codesystem-compare-cs1-v1.json",
+    "compare/codesystem-compare-cs1-v2.json",
+    "compare/codesystem-compare-cs2.json",
+    "compare/codesystem-compare-cs3.json",
+    "compare/valueset-compare-disj-1a.json",
+    "compare/valueset-compare-disj-1b.json",
+    "compare/valueset-compare-disj-2a.json",
+    "compare/valueset-compare-disj-2b.json",
+    "compare/valueset-compare-disj-3a.json",
+    "compare/valueset-compare-disj-3b.json",
+    "compare/valueset-compare-disj-4a.json",
+    "compare/valueset-compare-disj-4b.json",
+    "compare/valueset-compare-eq-1a.json",
+    "compare/valueset-compare-eq-1b.json",
+    "compare/valueset-compare-eq-2a.json",
+    "compare/valueset-compare-eq-2b.json",
+    "compare/valueset-compare-eq-3a.json",
+    "compare/valueset-compare-eq-3b.json",
+    "compare/valueset-compare-eq-4a.json",
+    "compare/valueset-compare-eq-4b.json",
+    "compare/valueset-compare-eq-5a.json",
+    "compare/valueset-compare-eq-5b.json",
+    "compare/valueset-compare-eq-5imp.json",
+    "compare/valueset-compare-eq-6-child1.json",
+    "compare/valueset-compare-eq-6-child2.json",
+    "compare/valueset-compare-eq-6a.json",
+    "compare/valueset-compare-eq-6b.json",
+    "compare/valueset-compare-expeq-1a.json",
+    "compare/valueset-compare-expeq-1b.json",
+    "compare/valueset-compare-expeq-2a.json",
+    "compare/valueset-compare-expeq-2b.json",
+    "compare/valueset-compare-expsub-1a.json",
+    "compare/valueset-compare-expsub-1b.json",
+    "compare/valueset-compare-ov-1a.json",
+    "compare/valueset-compare-ov-1b.json",
+    "compare/valueset-compare-ov-2a.json",
+    "compare/valueset-compare-ov-2b.json",
+    "compare/valueset-compare-ov-3a.json",
+    "compare/valueset-compare-ov-3b.json",
+    "compare/valueset-compare-ov-4a.json",
+    "compare/valueset-compare-ov-4b.json",
+    "compare/valueset-compare-ov-5a.json",
+    "compare/valueset-compare-ov-5b.json",
+    "compare/valueset-compare-ov-6a.json",
+    "compare/valueset-compare-ov-6b.json",
+    "compare/valueset-compare-sub-1a.json",
+    "compare/valueset-compare-sub-1b.json",
+    "compare/valueset-compare-sub-2a.json",
+    "compare/valueset-compare-sub-2b.json",
+    "compare/valueset-compare-sub-3a.json",
+    "compare/valueset-compare-sub-3b.json",
+    "compare/valueset-compare-sub-4a.json",
+    "compare/valueset-compare-sub-4b.json",
+    "compare/valueset-compare-unk-1a.json",
+    "compare/valueset-compare-unk-1b.json",
+    "compare/valueset-compare-unk-2a.json",
+    "compare/valueset-compare-unk-2b.json",
+    "compare/valueset-compare-unk-3a.json",
+    "compare/valueset-compare-unk-3b.json",
+    "compare/valueset-compare-ver-1a.json",
+    "compare/valueset-compare-ver-1b.json",
+    "compare/valueset-compare-ver-2a.json",
+    "compare/valueset-compare-ver-2b.json",
+    "compare/valueset-compare-ver-3a.json",
+    "compare/valueset-compare-ver-3b.json",
+    "compare/valueset-compare-ver-4a.json",
+    "compare/valueset-compare-ver-4b.json",
+    "compare/valueset-compare-ver-5.json",
+    "compare/valueset-compare-ver-5-v2.json",
+    "compare/valueset-compare-ver-6a.json",
+    "compare/valueset-compare-ver-6b.json"
+  ],
+  "tests": [
+    {
+      "name": "compare-eq-identical-def",
+      "description": "Equivalent: identical is-a filter definitions",
+      "operation": "compare",
+      "request": "compare/compare-eq-identical-def-request-parameters.json",
+      "response": "compare/compare-eq-identical-def-response-parameters.json"
+    },
+    {
+      "name": "compare-eq-enum-reorder",
+      "description": "Equivalent: same enumerated codes in different order",
+      "operation": "compare",
+      "request": "compare/compare-eq-enum-reorder-request-parameters.json",
+      "response": "compare/compare-eq-enum-reorder-response-parameters.json"
+    },
+    {
+      "name": "compare-eq-multi-include-reorder",
+      "description": "Equivalent: multiple includes from same system in different order",
+      "operation": "compare",
+      "request": "compare/compare-eq-multi-include-reorder-request-parameters.json",
+      "response": "compare/compare-eq-multi-include-reorder-response-parameters.json"
+    },
+    {
+      "name": "compare-eq-filter-vs-enum",
+      "description": "Equivalent: is-a filter vs explicit enumeration of same codes",
+      "operation": "compare",
+      "request": "compare/compare-eq-filter-vs-enum-request-parameters.json",
+      "response": "compare/compare-eq-filter-vs-enum-response-parameters.json"
+    },
+    {
+      "name": "compare-eq-import-vs-inline",
+      "description": "Equivalent: imported value set vs same definition inline",
+      "operation": "compare",
+      "request": "compare/compare-eq-import-vs-inline-request-parameters.json",
+      "response": "compare/compare-eq-import-vs-inline-response-parameters.json"
+    },
+    {
+      "name": "compare-eq-import-reorder",
+      "description": "Equivalent: child value sets imported in different order",
+      "operation": "compare",
+      "request": "compare/compare-eq-import-reorder-request-parameters.json",
+      "response": "compare/compare-eq-import-reorder-response-parameters.json"
+    },
+    {
+      "name": "compare-expeq-exclude-vs-enum",
+      "description": "Equivalent (expansion): all CS1 minus C vs enumeration of same codes",
+      "operation": "compare",
+      "request": "compare/compare-expeq-exclude-vs-enum-request-parameters.json",
+      "response": "compare/compare-expeq-exclude-vs-enum-response-parameters.json"
+    },
+    {
+      "name": "compare-expeq-exclude-partial",
+      "description": "Equivalent (expansion): is-a root minus {A2,B2} vs enumeration of result",
+      "operation": "compare",
+      "request": "compare/compare-expeq-exclude-partial-request-parameters.json",
+      "response": "compare/compare-expeq-exclude-partial-response-parameters.json"
+    },
+    {
+      "name": "compare-sub-branch-vs-root",
+      "description": "Subset: is-a A is subset of is-a root",
+      "operation": "compare",
+      "request": "compare/compare-sub-branch-vs-root-request-parameters.json",
+      "response": "compare/compare-sub-branch-vs-root-response-parameters.json"
+    },
+    {
+      "name": "compare-sub-enum-vs-filter",
+      "description": "Subset: enumerated {A1,A2} is subset of is-a A",
+      "operation": "compare",
+      "request": "compare/compare-sub-enum-vs-filter-request-parameters.json",
+      "response": "compare/compare-sub-enum-vs-filter-response-parameters.json"
+    },
+    {
+      "name": "compare-sub-base-vs-import-plus",
+      "description": "Subset: base VS is subset of VS that imports it and adds codes",
+      "operation": "compare",
+      "request": "compare/compare-sub-base-vs-import-plus-request-parameters.json",
+      "response": "compare/compare-sub-base-vs-import-plus-response-parameters.json"
+    },
+    {
+      "name": "compare-sub-leaf-vs-subtree",
+      "description": "Subset: single leaf {A1} is subset of is-a A",
+      "operation": "compare",
+      "request": "compare/compare-sub-leaf-vs-subtree-request-parameters.json",
+      "response": "compare/compare-sub-leaf-vs-subtree-response-parameters.json"
+    },
+    {
+      "name": "compare-super-root-vs-branch",
+      "description": "Superset: is-a root is superset of is-a A",
+      "operation": "compare",
+      "request": "compare/compare-super-root-vs-branch-request-parameters.json",
+      "response": "compare/compare-super-root-vs-branch-response-parameters.json"
+    },
+    {
+      "name": "compare-expsub-exclude-narrower",
+      "description": "Subset (expansion): all minus {C,B1,B2} subset of all minus {C}",
+      "operation": "compare",
+      "request": "compare/compare-expsub-exclude-narrower-request-parameters.json",
+      "response": "compare/compare-expsub-exclude-narrower-response-parameters.json"
+    },
+    {
+      "name": "compare-disj-diff-systems",
+      "description": "Disjoint: value sets from entirely different code systems",
+      "operation": "compare",
+      "request": "compare/compare-disj-diff-systems-request-parameters.json",
+      "response": "compare/compare-disj-diff-systems-response-parameters.json"
+    },
+    {
+      "name": "compare-disj-diff-branches",
+      "description": "Disjoint: non-overlapping branches (A vs B) in same system",
+      "operation": "compare",
+      "request": "compare/compare-disj-diff-branches-request-parameters.json",
+      "response": "compare/compare-disj-diff-branches-response-parameters.json"
+    },
+    {
+      "name": "compare-disj-enum-no-intersection",
+      "description": "Disjoint: enumerated codes with no intersection (flat system)",
+      "operation": "compare",
+      "request": "compare/compare-disj-enum-no-intersection-request-parameters.json",
+      "response": "compare/compare-disj-enum-no-intersection-response-parameters.json"
+    },
+    {
+      "name": "compare-disj-multi-system",
+      "description": "Disjoint: multi-system value sets with no overlap",
+      "operation": "compare",
+      "request": "compare/compare-disj-multi-system-request-parameters.json",
+      "response": "compare/compare-disj-multi-system-response-parameters.json"
+    },
+    {
+      "name": "compare-ov-enum-partial",
+      "description": "Overlap: partially overlapping enumerations",
+      "operation": "compare",
+      "request": "compare/compare-ov-enum-partial-request-parameters.json",
+      "response": "compare/compare-ov-enum-partial-response-parameters.json"
+    },
+    {
+      "name": "compare-ov-filter-vs-enum",
+      "description": "Overlap: is-a A overlaps with enum {A2, B1}",
+      "operation": "compare",
+      "request": "compare/compare-ov-filter-vs-enum-request-parameters.json",
+      "response": "compare/compare-ov-filter-vs-enum-response-parameters.json"
+    },
+    {
+      "name": "compare-ov-multi-include-partial",
+      "description": "Overlap: multi-include with partial overlap (is-a A+{B1} vs is-a B+{A1})",
+      "operation": "compare",
+      "request": "compare/compare-ov-multi-include-partial-request-parameters.json",
+      "response": "compare/compare-ov-multi-include-partial-response-parameters.json"
+    },
+    {
+      "name": "compare-ov-import-partial",
+      "description": "Overlap: imported value sets creating partial overlap",
+      "operation": "compare",
+      "request": "compare/compare-ov-import-partial-request-parameters.json",
+      "response": "compare/compare-ov-import-partial-response-parameters.json"
+    },
+    {
+      "name": "compare-ov-cross-system",
+      "description": "Overlap: cross-system partial overlap",
+      "operation": "compare",
+      "request": "compare/compare-ov-cross-system-request-parameters.json",
+      "response": "compare/compare-ov-cross-system-response-parameters.json"
+    },
+    {
+      "name": "compare-ov-exclude-partial",
+      "description": "Overlap (expansion): overlap after excludes applied",
+      "operation": "compare",
+      "request": "compare/compare-ov-exclude-partial-request-parameters.json",
+      "response": "compare/compare-ov-exclude-partial-response-parameters.json"
+    },
+    {
+      "name": "compare-unk-snomed-both-filter",
+      "description": "Unknown: two SNOMED is-a filters, can't determine relationship",
+      "operation": "compare",
+      "request": "compare/compare-unk-snomed-both-filter-request-parameters.json",
+      "response": "compare/compare-unk-snomed-both-filter-response-parameters.json"
+    },
+    {
+      "name": "compare-unk-snomed-filter-vs-enum",
+      "description": "Unknown: SNOMED is-a filter vs enumerated SNOMED code",
+      "operation": "compare",
+      "request": "compare/compare-unk-snomed-filter-vs-enum-request-parameters.json",
+      "response": "compare/compare-unk-snomed-filter-vs-enum-response-parameters.json"
+    },
+    {
+      "name": "compare-unk-unknown-system",
+      "description": "Unknown: unknown code system, can't expand",
+      "operation": "compare",
+      "request": "compare/compare-unk-unknown-system-request-parameters.json",
+      "response": "compare/compare-unk-unknown-system-response-parameters.json"
+    },
+    {
+      "name": "compare-ver-same-def-diff-cs-version",
+      "description": "Version: same is-a A definition, CS1 v1 subset of CS1 v2",
+      "operation": "compare",
+      "request": "compare/compare-ver-same-def-diff-cs-version-request-parameters.json",
+      "response": "compare/compare-ver-same-def-diff-cs-version-response-parameters.json"
+    },
+    {
+      "name": "compare-ver-all-diff-cs-version",
+      "description": "Version: all CS1, v1 subset of v2",
+      "operation": "compare",
+      "request": "compare/compare-ver-all-diff-cs-version-request-parameters.json",
+      "response": "compare/compare-ver-all-diff-cs-version-response-parameters.json"
+    },
+    {
+      "name": "compare-ver-branch-diff-cs-version",
+      "description": "Version: is-a B, CS1 v1 subset of CS1 v2",
+      "operation": "compare",
+      "request": "compare/compare-ver-branch-diff-cs-version-request-parameters.json",
+      "response": "compare/compare-ver-branch-diff-cs-version-response-parameters.json"
+    },
+    {
+      "name": "compare-ver-unversioned-vs-pinned",
+      "description": "Version: unversioned is-a A (uses latest=v2) superset of v1-pinned",
+      "operation": "compare",
+      "request": "compare/compare-ver-unversioned-vs-pinned-request-parameters.json",
+      "response": "compare/compare-ver-unversioned-vs-pinned-response-parameters.json"
+    },
+    {
+      "name": "compare-ver-same-vs-diff-version",
+      "description": "Version: same VS URL, v1 subset of v2 (definition changed)",
+      "operation": "compare",
+      "request": "compare/compare-ver-same-vs-diff-version-request-parameters.json",
+      "response": "compare/compare-ver-same-vs-diff-version-response-parameters.json"
+    },
+    {
+      "name": "compare-ver-import-version-cascade",
+      "description": "Version: import of v1-pinned VS subset of import of v2-pinned VS",
+      "operation": "compare",
+      "request": "compare/compare-ver-import-version-cascade-request-parameters.json",
+      "response": "compare/compare-ver-import-version-cascade-response-parameters.json"
+    }
+  ]
+}

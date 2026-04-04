@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-eq-5b",
+  "version": "1.0.0",
+  "name": "CompareEq5B",
+  "title": "Equivalent - imports vs inline (valueSet ref)",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/test/ValueSet/compare-eq-5imp"
+        ]
+      }
+    ]
+  }
+}

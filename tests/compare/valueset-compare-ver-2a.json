@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-ver-2a",
+  "version": "1.0.0",
+  "name": "CompareVer2A",
+  "title": "Version - all CS1 pinned to v1",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

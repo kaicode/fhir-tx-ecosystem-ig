@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-ver-5",
+  "version": "1.0.0",
+  "name": "CompareVer5",
+  "title": "Version - VS version 1 (is-a A only)",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A"
+          }
+        ]
+      }
+    ]
+  }
+}

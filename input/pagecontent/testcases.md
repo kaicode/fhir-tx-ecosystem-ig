@@ -2,6 +2,9 @@
 
 ### Test cases 
 
+These tests are a particular implementation of the requirements for a terminology 
+server that can be used by the validator and IG publisher. 
+
 
 The tests assume that the server can accept code systems on the fly.
 If servers do not accept code systems on the fly, server authors will have to 

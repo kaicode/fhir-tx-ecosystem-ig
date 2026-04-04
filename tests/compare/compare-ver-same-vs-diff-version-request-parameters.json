@@ -1,0 +1,21 @@
+{
+  "resourceType": "Parameters",
+  "parameter": [
+    {
+      "name": "valueSetA",
+      "valueUri": "http://hl7.org/fhir/test/ValueSet/compare-ver-5"
+    },
+    {
+      "name": "valueSetB",
+      "valueUri": "http://hl7.org/fhir/test/ValueSet/compare-ver-5"
+    },
+    {
+      "name": "valueSetVersionA",
+      "valueString": "1.0.0"
+    },
+    {
+      "name": "valueSetVersionB",
+      "valueString": "2.0.0"
+    }
+  ]
+}

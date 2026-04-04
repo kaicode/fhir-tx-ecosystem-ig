@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "http://hl7.org/fhir/test/CodeSystem/compare-cs2",
+  "version": "1.0.0",
+  "name": "CompareCS2",
+  "title": "Compare Test CodeSystem 2",
+  "status": "active",
+  "content": "complete",
+  "hierarchyMeaning": "is-a",
+  "concept": [
+    {
+      "code": "X",
+      "display": "Branch X",
+      "concept": [
+        {
+          "code": "X1",
+          "display": "Leaf X1"
+        },
+        {
+          "code": "X2",
+          "display": "Leaf X2"
+        }
+      ]
+    },
+    {
+      "code": "Y",
+      "display": "Branch Y",
+      "concept": [
+        {
+          "code": "Y1",
+          "display": "Leaf Y1"
+        },
+        {
+          "code": "Y2",
+          "display": "Leaf Y2"
+        }
+      ]
+    }
+  ]
+}

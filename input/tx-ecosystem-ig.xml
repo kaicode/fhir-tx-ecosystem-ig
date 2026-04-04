@@ -95,6 +95,13 @@
         <code value="path-test"/>
       </code>    
       <value value="/tests"/>
+    </parameter>     
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="resource-language-policy"/>
+      </code>    
+      <value value="all-realm"/>
     </parameter>    
   </definition> 
 </ImplementationGuide>

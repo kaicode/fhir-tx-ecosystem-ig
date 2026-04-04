@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-sub-4b",
+  "version": "1.0.0",
+  "name": "CompareSub4B",
+  "title": "Subset - is-a A (subtree)",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-sub-1b",
+  "version": "1.0.0",
+  "name": "CompareSub1B",
+  "title": "Subset - is-a root (larger)",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "root"
+          }
+        ]
+      }
+    ]
+  }
+}

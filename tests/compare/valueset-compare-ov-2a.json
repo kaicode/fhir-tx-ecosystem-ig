@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-ov-2a",
+  "version": "1.0.0",
+  "name": "CompareOv2A",
+  "title": "Overlap - is-a A",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A"
+          }
+        ]
+      }
+    ]
+  }
+}

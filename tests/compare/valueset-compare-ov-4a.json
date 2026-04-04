@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-ov-4a",
+  "version": "1.0.0",
+  "name": "CompareOv4A",
+  "title": "Overlap - import(is-a A) + {C}",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/test/ValueSet/compare-eq-6-child1"
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+        "concept": [
+          {
+            "code": "C"
+          }
+        ]
+      }
+    ]
+  }
+}

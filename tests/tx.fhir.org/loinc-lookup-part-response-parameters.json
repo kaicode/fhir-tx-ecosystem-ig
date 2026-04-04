@@ -17,14 +17,32 @@
     {
       "name" : "use",
       "valueCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "PartDisplayName",
-        "display" : "PartDisplayName"
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
       }
     },
     {
       "name" : "value",
       "valueString" : "PANEL.HL7.CYTOGEN"
+    }]
+  },
+  {
+    "name" : "designation",
+    "part" : [{
+      "name" : "language",
+      "valueCode" : "en-US"
+    },
+    {
+      "name" : "use",
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "DisplayName",
+        "display" : "DisplayName"
+      }
+    },
+    {
+      "name" : "value",
+      "valueString" : "HL7 cytogenetics panels"
     }]
   },
   {
@@ -168,6 +186,21 @@
     "name" : "property",
     "part" : [{
       "name" : "code",
+      "valueCode" : "RELATEDNAMES2"
+    },
+    {
+      "name" : "language",
+      "valueCode" : "en-US"
+    },
+    {
+      "name" : "value",
+      "valueString" : "HL7 cytogenetics panels"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
       "valueCode" : "STATUS"
     },
     {
@@ -181,6 +214,6 @@
   },
   {
     "name" : "version",
-    "valueString" : "2.78"
+    "valueString" : "2.81"
   }]
 }

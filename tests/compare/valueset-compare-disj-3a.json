@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-disj-3a",
+  "version": "1.0.0",
+  "name": "CompareDisj3A",
+  "title": "Disjoint - enum {alpha, beta} from CS3",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/compare-cs3",
+        "concept": [
+          {
+            "code": "alpha"
+          },
+          {
+            "code": "beta"
+          }
+        ]
+      }
+    ]
+  }
+}

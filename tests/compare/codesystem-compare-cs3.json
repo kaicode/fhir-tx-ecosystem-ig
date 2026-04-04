@@ -1,0 +1,31 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "http://hl7.org/fhir/test/CodeSystem/compare-cs3",
+  "version": "1.0.0",
+  "name": "CompareCS3",
+  "title": "Compare Test CodeSystem 3 (flat)",
+  "status": "active",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "alpha",
+      "display": "Alpha"
+    },
+    {
+      "code": "beta",
+      "display": "Beta"
+    },
+    {
+      "code": "gamma",
+      "display": "Gamma"
+    },
+    {
+      "code": "delta",
+      "display": "Delta"
+    },
+    {
+      "code": "epsilon",
+      "display": "Epsilon"
+    }
+  ]
+}

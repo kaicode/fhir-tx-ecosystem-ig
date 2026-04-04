@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-unk-1b",
+  "version": "1.0.0",
+  "name": "CompareUnk1B",
+  "title": "Unknown - SNOMED different is-a filter",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "64572001"
+          }
+        ]
+      }
+    ]
+  }
+}

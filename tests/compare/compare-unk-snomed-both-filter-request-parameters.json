@@ -1,0 +1,13 @@
+{
+  "resourceType": "Parameters",
+  "parameter": [
+    {
+      "name": "valueSetA",
+      "valueUri": "http://hl7.org/fhir/test/ValueSet/compare-unk-1a"
+    },
+    {
+      "name": "valueSetB",
+      "valueUri": "http://hl7.org/fhir/test/ValueSet/compare-unk-1b"
+    }
+  ]
+}

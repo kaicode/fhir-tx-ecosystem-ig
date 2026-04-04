@@ -1,5 +1,5 @@
 {
-  "$optional-properties$" : ["id", "date", "publisher"],
+  "$optional-properties$" : ["id", "date", "publisher", "compose"],
   "resourceType" : "ValueSet",
   "id" : "$id$",
   "url" : "http://hl7.org/fhir/test/ValueSet/simple-filter-isa",
@@ -21,12 +21,20 @@
     }]
   },
   "expansion" : {
+    "$optional-properties$" : ["id", "offset"],
+    "id":"$id$",
     "identifier" : "$uuid$",
     "timestamp" : "$instant$",
     "total" : 5,
+    "offset" : 0,
     "parameter" : [{
       "name" : "excludeNested",
       "valueBoolean" : false
+    },
+    {
+      "$optional$" : true,
+      "name" : "includeDefinition",
+      "valueBoolean" : true
     },
     {
       "name" : "includeDesignations",
@@ -35,11 +43,11 @@
     {
       "name" : "used-codesystem",
       "valueUri" : "http://hl7.org/fhir/test/CodeSystem/simple|0.1.0"
-    },
-    {
+    }],
+    "property" : [{
       "$optional$" : true,
-      "name" : "version",
-      "valueUri" : "http://hl7.org/fhir/test/CodeSystem/simple|0.1.0"
+      "code" : "status",
+      "uri" : "http://hl7.org/fhir/concept-properties#status"
     }],
     "contains" : [{
       "system" : "http://hl7.org/fhir/test/CodeSystem/simple",
@@ -53,6 +61,11 @@
           "code" : "olde-english"
         },
         "value" : "mine own second code"
+      }],
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
       }],
       "contains" : [{
         "system" : "http://hl7.org/fhir/test/CodeSystem/simple",

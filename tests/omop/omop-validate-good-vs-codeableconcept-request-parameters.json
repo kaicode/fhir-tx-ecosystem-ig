@@ -1,0 +1,15 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "codeableConcept",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir-terminology.ohdsi.org",
+        "code" : "36274733"
+      }]
+    }
+  },{
+    "name" : "url",
+    "valueUri" : "https://fhir-terminology.ohdsi.org/ValueSet/Drug"
+  }]
+}

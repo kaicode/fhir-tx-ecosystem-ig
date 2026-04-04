@@ -1,0 +1,84 @@
+﻿{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "codeableConcept",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/test/CodeSystem/simpleXX",
+        "version" : "1.0.4234",
+        "code" : "code1"
+      }]
+    }
+  },
+  {
+    "name" : "issues",
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "issue" : [{
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+        }],
+        "severity" : "error",
+        "code" : "code-invalid",
+        "details" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+            "code" : "not-in-vs"
+          }],
+          "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/test/ValueSet/simple-all|5.0.0'"
+        }
+      },
+      {
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "UNKNOWN_CODESYSTEM_VERSION_NONE"
+        }],
+        "severity" : "error",
+        "code" : "not-found",
+        "details" : {
+          
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+            "code" : "not-found"
+          }],
+          "text" : "A definition for CodeSystem 'http://hl7.org/fhir/test/CodeSystem/simpleXX' version '1.0.4234' could not be found, so the code cannot be validated. No versions of this code system are known"
+        },
+        "location" : ["CodeableConcept.coding[0].system"],
+        "expression" : ["CodeableConcept.coding[0].system"]
+      },
+      {
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+        }],
+        "severity" : "information",
+        "code" : "code-invalid",
+        "details" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+            "code" : "this-code-not-in-vs"
+          }],
+          "text" : "The provided code 'http://hl7.org/fhir/test/CodeSystem/simpleXX|1.0.4234#code1' was not found in the value set 'http://hl7.org/fhir/test/ValueSet/simple-all|5.0.0'"
+        },
+        "location" : ["CodeableConcept.coding[0].code"],
+        "expression" : ["CodeableConcept.coding[0].code"]
+      }]
+    }
+  },
+  {
+    "name" : "message",
+    "valueString" : "A definition for CodeSystem 'http://hl7.org/fhir/test/CodeSystem/simpleXX' version '1.0.4234' could not be found, so the code cannot be validated. No versions of this code system are known; No valid coding was found for the value set 'http://hl7.org/fhir/test/ValueSet/simple-all|5.0.0'"
+  },
+  {
+    "name" : "result",
+    "valueBoolean" : false
+  },
+  {
+    "name" : "x-unknown-system",
+    "valueCanonical" : "http://hl7.org/fhir/test/CodeSystem/simpleXX"
+  }]
+}

@@ -1,0 +1,11 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "coding",
+    "valueCoding" : {
+      "system" : "https://fhir-terminology.ohdsi.org",
+      "code" : "1029267",
+      "display" : "Pulse oximetry"
+    }
+  }]
+}

@@ -9,7 +9,11 @@
     "resource" : {
       "resourceType" : "OperationOutcome",
       "issue" : [{
-        "$optional-properties$" : ["location" ],
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "UNKNOWN_CODESYSTEM"
+        }],
         "severity" : "error",
         "code" : "not-found",
         "details" : {
@@ -22,24 +26,12 @@
         },
         "location" : ["system"],
         "expression" : ["system"]
-      },
-      {
-        "severity" : "warning",
-        "code" : "not-found",
-        "details" : {
-          
-          "coding" : [{
-            "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
-            "code" : "vs-invalid"
-          }],
-          "text" : "Unable to check whether the code is in the value set 'http://hl7.org/fhir/test/ValueSet/unknown-system|5.0.0' because the code system http://hl7.org/fhir/test/CodeSystem/simpleX was not found"
-        }
       }]
     }
   },
   {
     "name" : "message",
-    "valueString" : "A definition for CodeSystem 'http://hl7.org/fhir/test/CodeSystem/simpleX' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://hl7.org/fhir/test/ValueSet/unknown-system|5.0.0' because the code system http://hl7.org/fhir/test/CodeSystem/simpleX was not found"
+    "valueString" : "A definition for CodeSystem 'http://hl7.org/fhir/test/CodeSystem/simpleX' could not be found, so the code cannot be validated"
   },
   {
     "name" : "result",

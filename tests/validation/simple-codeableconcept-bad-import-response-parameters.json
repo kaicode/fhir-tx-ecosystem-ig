@@ -14,6 +14,11 @@
     "resource" : {
       "resourceType" : "OperationOutcome",
       "issue" : [{
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "Unable_to_resolve_value_Set_"
+        }],
         "severity" : "error",
         "code" : "not-found",
         "details" : {
@@ -23,23 +28,12 @@
           }],
           "text" : "A definition for the value Set 'http://hl7.org/fhir/test/ValueSet/simple-filter-isaX' could not be found"
         }
-      },
-      {
-        "severity" : "warning",
-        "code" : "not-found",
-        "details" : {
-          "coding" : [{
-            "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
-            "code" : "vs-invalid"
-          }],
-          "text" : "Unable to check whether the code is in the value set 'http://hl7.org/fhir/test/ValueSet/simple-import-bad|5.0.0' because the value set http://hl7.org/fhir/test/ValueSet/simple-filter-isaX was not found"
-        }
       }]
     }
   },
   {
     "name" : "message",
-    "valueString" : "A definition for the value Set 'http://hl7.org/fhir/test/ValueSet/simple-filter-isaX' could not be found; Unable to check whether the code is in the value set 'http://hl7.org/fhir/test/ValueSet/simple-import-bad|5.0.0' because the value set http://hl7.org/fhir/test/ValueSet/simple-filter-isaX was not found"
+    "valueString" : "A definition for the value Set 'http://hl7.org/fhir/test/ValueSet/simple-filter-isaX' could not be found"
   },
   {
     "name" : "result",

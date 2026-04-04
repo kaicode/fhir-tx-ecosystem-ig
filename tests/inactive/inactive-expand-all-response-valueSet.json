@@ -16,9 +16,12 @@
     }]
   },
   "expansion" : {
+    "$optional-properties$" : ["id", "offset"],
+    "id": "$id$",
     "identifier" : "$uuid$",
     "timestamp" : "$instant$",
     "total" : 3,
+    "offset" : 0,
     "parameter" : [{
       "name" : "excludeNested",
       "valueBoolean" : true
@@ -26,11 +29,11 @@
     {
       "name" : "used-codesystem",
       "valueUri" : "http://hl7.org/fhir/test/CodeSystem/inactive|0.1.0"
-    },
-    {
-      "$optional$" : true,
-      "name" : "version",
-      "valueUri" : "http://hl7.org/fhir/test/CodeSystem/inactive|0.1.0"
+    }],
+    "property" : [{
+        "$optional$" : true,
+      "code" : "status",
+      "uri" : "http://hl7.org/fhir/concept-properties#status"
     }],
     "contains" : [{
       "system" : "http://hl7.org/fhir/test/CodeSystem/inactive",
@@ -41,13 +44,23 @@
       "system" : "http://hl7.org/fhir/test/CodeSystem/inactive",
       "inactive" : true,
       "code" : "codeInactive",
-      "display" : "Display inactive"
+      "display" : "Display inactive",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "inactive"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/test/CodeSystem/inactive",
       "inactive" : true,
       "code" : "codeRetired",
-      "display" : "Display Retired"
+      "display" : "Display Retired",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     }]
   }
 }

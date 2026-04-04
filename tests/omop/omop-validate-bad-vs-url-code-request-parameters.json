@@ -1,0 +1,13 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "system",
+    "valueUri" : "https://fhir-terminology.ohdsi.org"
+  },{
+    "name" : "code",
+    "valueCode" : "45773555"
+  },{
+    "name" : "url",
+    "valueUri" : "http://hl7.org/fhir/test/ValueSet/omop-filter-domain"
+  }]
+}

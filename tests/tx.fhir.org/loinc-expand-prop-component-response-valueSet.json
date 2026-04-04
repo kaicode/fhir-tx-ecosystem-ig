@@ -13,18 +13,23 @@
   "expansion" : {
     "identifier" : "$uuid$",
     "timestamp" : "$instant$",
-    "total" : 88,
+    "total" : 99,
     "parameter" : [{
       "name" : "excludeNested",
       "valueBoolean" : true
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "http://loinc.org|2.78"
+      "valueUri" : "http://loinc.org|2.82"
     },
     {
-      "name" : "version",
-      "valueUri" : "http://loinc.org|2.78"
+      "$optional$" : true,
+      "name" : "used-supplement",
+      "valueUri" : "http://fhir.de/CodeSystem/loinc-supplement-basis|0.9.13"
+    }],
+    "property" : [{
+      "code" : "status",
+      "uri" : "http://hl7.org/fhir/concept-properties#status"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -55,6 +60,105 @@
       "system" : "http://loinc.org",
       "code" : "105273-7",
       "display" : "Glucose [Moles/volume] in Reporting Period mean Interstitial fluid by calculation"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "108027-4",
+      "display" : "Glucose [Measurement] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "TRIAL"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "109417-6",
+      "display" : "Glucose [Measurement] in Body fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "TRIAL"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "109485-3",
+      "display" : "Glucose [Measurement] in Arterial blood",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "TRIAL"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "109529-8",
+      "display" : "Glucose [Measurement] in Venous blood",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "TRIAL"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "109723-7",
+      "display" : "Glucose [Measurement] in Dialysis fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "TRIAL"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "109729-4",
+      "display" : "Glucose [Measurement] in Peritoneal dialysis fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "TRIAL"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "109834-2",
+      "display" : "Glucose [Measurement] in Interstitial fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "TRIAL"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "109888-8",
+      "display" : "Glucose [Measurement] in Capillary blood",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "TRIAL"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "110283-9",
+      "display" : "Glucose [Measurement] in Serum or Plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "TRIAL"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "110643-4",
+      "display" : "Glucose [Measurement] in Stool",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "TRIAL"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "110939-6",
+      "display" : "Glucose [Measurement] in Blood",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "TRIAL"
+      }]
     },
     {
       "system" : "http://loinc.org",
@@ -144,7 +248,11 @@
     {
       "system" : "http://loinc.org",
       "code" : "20406-5",
-      "display" : "Deprecated Glucose [Mass/volume] in Urine by Test strip"
+      "display" : "Deprecated Glucose [Mass/volume] in Urine by Test strip",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DEPRECATED"
+      }]
     },
     {
       "system" : "http://loinc.org",
@@ -263,13 +371,23 @@
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "35211-2",
-      "display" : "Glucose [Mass or Moles/volume] in Serum or Plasma"
+      "display" : "Glucose [Mass or Moles/volume] in Serum or Plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "35212-0",
-      "display" : "Glucose [Mass or Moles/volume] in Urine"
+      "display" : "Glucose [Mass or Moles/volume] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
@@ -398,8 +516,13 @@
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "5914-7",
-      "display" : "Glucose [Presence] in Blood by Test strip"
+      "display" : "Glucose [Presence] in Blood by Test strip",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
@@ -414,7 +537,11 @@
     {
       "system" : "http://loinc.org",
       "code" : "6777-7",
-      "display" : "Deprecated Glucose [Mass/volume] in Serum or Plasma"
+      "display" : "Deprecated Glucose [Mass/volume] in Serum or Plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DEPRECATED"
+      }]
     },
     {
       "system" : "http://loinc.org",

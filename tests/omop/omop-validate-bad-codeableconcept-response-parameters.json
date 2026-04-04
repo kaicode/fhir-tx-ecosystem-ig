@@ -1,0 +1,44 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "codeableConcept",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir-terminology.ohdsi.org",
+        "code" : "4097430.0"
+      }]
+    }
+  },
+  {
+    "name" : "issues",
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "issue" : [{
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "Unknown_Code_in_Version"
+        }],
+        "severity" : "error",
+        "code" : "code-invalid",
+        "details" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+            "code" : "invalid-code"
+          }],
+          "text" : "Unknown code '4097430.0' in the CodeSystem 'https://fhir-terminology.ohdsi.org' version '20240716'"
+        },
+        "location" : ["CodeableConcept.coding[0].code"],
+        "expression" : ["CodeableConcept.coding[0].code"]
+      }]
+    }
+  },
+  {
+    "name" : "message",
+    "valueString" : "Unknown code '4097430.0' in the CodeSystem 'https://fhir-terminology.ohdsi.org' version '20240716'"
+  },
+  {
+    "name" : "result",
+    "valueBoolean" : false
+  }]
+}

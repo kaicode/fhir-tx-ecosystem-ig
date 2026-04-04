@@ -8,7 +8,7 @@
     "valueCode" : "code1"
   },{
     "name" : "display",
-    "valueCode" : "Anzeige 1"
+    "valueString" : "Anzeige 1"
   },{
     "name" : "system",
     "valueUri" : "http://hl7.org/fhir/test/CodeSystem/en-multi"

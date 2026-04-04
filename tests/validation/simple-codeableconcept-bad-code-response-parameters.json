@@ -1,4 +1,4 @@
-﻿{
+{
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "codeableConcept",
@@ -14,10 +14,14 @@
     "resource" : {
       "resourceType" : "OperationOutcome",
       "issue" : [{
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+        }],
         "severity" : "error",
         "code" : "code-invalid",
         "details" : {
-          
           "coding" : [{
             "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
             "code" : "not-in-vs"
@@ -26,11 +30,15 @@
         }
       },
       {
-        "$optional-properties$" : ["location" ],
+        "$optional-properties$" : ["location"],
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "Unknown_Code_in_Version"
+        }],
         "severity" : "error",
         "code" : "code-invalid",
         "details" : {
-          
           "coding" : [{
             "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
             "code" : "invalid-code"
@@ -41,11 +49,15 @@
         "expression" : ["CodeableConcept.coding[0].code"]
       },
       {
-        "$optional-properties$" : ["location" ],
+        "$optional-properties$" : ["location"],
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+        }],
         "severity" : "information",
         "code" : "code-invalid",
         "details" : {
-          
           "coding" : [{
             "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
             "code" : "this-code-not-in-vs"

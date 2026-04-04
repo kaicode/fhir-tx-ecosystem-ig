@@ -1,28 +1,27 @@
 {
-  "$optional-properties$" : ["id","date"],
+  "$optional-properties$" : ["id","date", "version"],
   "resourceType" : "ValueSet",
   "id" : "$id$",
   "url" : "http://hl7.org/fhir/tests/ValueSet/act-class",
+  "version" : "1",
   "name" : "ActClass",
   "title" : "ActClass",
   "status" : "active",
   "experimental" : false,
   "date" : "2014-03-26",
   "expansion" : {
+    "$optional-properties$" : ["id","offset"],
+    "id" : "$id$",
     "identifier" : "$uuid$",
     "timestamp" : "$instant$",
     "total" : 119,
+    "offset": 0,
     "parameter" : [{
       "name" : "excludeNested",
       "valueBoolean" : true
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "http://hl7.org/fhir/tests/CodeSystem/act-class"
-    },
-    {
-      "$optional$" : true,
-      "name" : "version",
       "valueUri" : "http://hl7.org/fhir/tests/CodeSystem/act-class"
     }],
     "property" : [{
@@ -82,7 +81,6 @@
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
-      "inactive" : true,
       "code" : "CASE",
       "display" : "public health case",
       "property" : [{
@@ -113,7 +111,6 @@
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
-      "inactive" : true,
       "code" : "CNOD",
       "display" : "Condition Node",
       "property" : [{
@@ -139,7 +136,6 @@
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
-      "inactive" : true,
       "code" : "COND",
       "display" : "Condition",
       "property" : [{
@@ -185,7 +181,6 @@
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
-      "inactive" : true,
       "code" : "DIET",
       "display" : "diet",
       "property" : [{
@@ -217,22 +212,42 @@
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "DOCCNTNT"
+      "code" : "DOCCNTNT",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "DOCLIST"
+      "code" : "DOCLIST",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "DOCLSTITM"
+      "code" : "DOCLSTITM",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "DOCPARA"
+      "code" : "DOCPARA",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
@@ -242,7 +257,12 @@
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "DOCTBL"
+      "code" : "DOCTBL",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
@@ -258,7 +278,12 @@
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
       "code" : "ENTRY",
-      "display" : "entry"
+      "display" : "entry",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
@@ -333,7 +358,12 @@
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "LINKHTML"
+      "code" : "LINKHTML",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
@@ -342,7 +372,6 @@
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
-      "inactive" : true,
       "code" : "LLD",
       "display" : "left lateral decubitus",
       "property" : [{
@@ -359,12 +388,22 @@
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "LOCALATTR"
+      "code" : "LOCALATTR",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "LOCALMRKP"
+      "code" : "LOCALMRKP",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
@@ -390,7 +429,12 @@
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
       "code" : "ORGANIZER",
-      "display" : "organizer"
+      "display" : "organizer",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
@@ -399,7 +443,6 @@
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
-      "inactive" : true,
       "code" : "OUTB",
       "display" : "outbreak",
       "property" : [{
@@ -450,7 +493,6 @@
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
-      "inactive" : true,
       "code" : "PRN",
       "display" : "prone",
       "property" : [{
@@ -467,7 +509,12 @@
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "REFR"
+      "code" : "REFR",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
@@ -481,7 +528,6 @@
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
-      "inactive" : true,
       "code" : "RLD",
       "display" : "right lateral decubitus",
       "property" : [{
@@ -502,7 +548,6 @@
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
-      "inactive" : true,
       "code" : "RTRD",
       "display" : "reverse trendelenburg",
       "property" : [{
@@ -538,7 +583,6 @@
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
-      "inactive" : true,
       "code" : "SFWL",
       "display" : "Semi-Fowler's",
       "property" : [{
@@ -549,7 +593,6 @@
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
-      "inactive" : true,
       "code" : "SIT",
       "display" : "sitting",
       "property" : [{
@@ -590,7 +633,6 @@
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
-      "inactive" : true,
       "code" : "STN",
       "display" : "standing",
       "property" : [{
@@ -611,7 +653,6 @@
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
-      "inactive" : true,
       "code" : "SUP",
       "display" : "supine",
       "property" : [{
@@ -623,27 +664,52 @@
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "TBLCOL"
+      "code" : "TBLCOL",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "TBLCOLGP"
+      "code" : "TBLCOLGP",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "TBLDATA"
+      "code" : "TBLDATA",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "TBLHDR"
+      "code" : "TBLHDR",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "TBLROW"
+      "code" : "TBLROW",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
@@ -657,7 +723,6 @@
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
-      "inactive" : true,
       "code" : "TRD",
       "display" : "trendelenburg",
       "property" : [{
@@ -689,27 +754,52 @@
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "ordered"
+      "code" : "ordered",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "tbody"
+      "code" : "tbody",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "tfoot"
+      "code" : "tfoot",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "thead"
+      "code" : "thead",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/tests/CodeSystem/act-class",
       "inactive" : true,
-      "code" : "unordered"
+      "code" : "unordered",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     }]
   }
 }

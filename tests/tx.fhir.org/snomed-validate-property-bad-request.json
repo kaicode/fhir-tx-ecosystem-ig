@@ -1,0 +1,29 @@
+{
+  "resourceType": "Parameters",
+  "parameter": [
+    {
+      "name": "code",
+      "valueCode": "10674711000119105"
+    },
+    {
+      "name": "system",
+      "valueUri": "http://snomed.info/sct"
+    },{
+      "name" : "valueSet",
+      "resource" : {
+        "resourceType": "ValueSet",
+        "compose": {
+          "include": [
+            {
+              "system": "http://snomed.info/sct",
+              "filter": [                        
+                { "property": "363698007", "op": "=",    "value": "89187006"  },
+                { "property": "concept",   "op": "is-a", "value": "195967001" }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

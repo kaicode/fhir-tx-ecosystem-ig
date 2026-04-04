@@ -1,0 +1,33 @@
+{
+  "resourceType": "Parameters",
+  "parameter": [
+    {
+      "name": "url",
+      "valueUri": "urn:iso:std:iso:3166"
+    },
+    {
+      "name": "code",
+      "valueCode": "XY"
+    },
+    {
+      "name" : "display",
+      "valueString" : "User-assigned"
+    },
+    {
+      "name" : "tx-resource",
+      "resource" : {
+        "resourceType" : "CodeSystem",
+        "extension" : [{ "url": "http://hl7.org/fhir/StructureDefinition/codesystem-supplement-type", "valueCode" : "lang-pack"}],
+        "url" : "http://hl7.org/fhir/test/CodeSystem/iso3166test",
+        "supplements" : "urn:iso:std:iso:3166",
+        "content" : "supplement",
+        "version" : "2024-06",
+        "concept" : [{
+            "code" : "XY",
+            "display" : "Weird Country",
+            "definition" : "A country that is weird"
+          }]  
+        }
+    }
+  ]
+}

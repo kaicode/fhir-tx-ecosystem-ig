@@ -5,8 +5,14 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="director"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="4"/>
+  </extension>
   <url value="http://hl7.org/fhir/uv/tx-ecosystem/ImplementationGuide/hl7.fhir.uv.tx-ecosystem"/>
-  <version value="1.6.6"/>
+  <version value="1.9.1"/>
   <name value="FHIRTerminologyEcosystemIG"/>
   <title value="FHIR Terminology Ecosystem IG"/>
   <status value="active"/>
@@ -32,7 +38,7 @@
   <dependsOn>
     <uri value="http://hl7.org/fhir/uv/application-feature/ImplementationGuide/hl7.fhir.uv.application-feature"/>
     <packageId value="hl7.fhir.uv.application-feature"/>
-    <version value="current"/>
+    <version value="1.0.0-ballot"/>
   </dependsOn>
 
   <definition>
@@ -51,6 +57,11 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <name value="service-requirements.html"/>
+        <title value="Requirements for Server Operators"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <name value="languages.html"/>
         <title value="How Language works"/>
         <generation value="markdown"/>
@@ -58,6 +69,11 @@
       <page>
         <name value="testcases.html"/>
         <title value="Test Case Registry"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <name value="r4.html"/>
+        <title value="R4 and Test Cases"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -80,14 +96,14 @@
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="releaselabel"/>
       </code>    
-      <value value="Release 0.2.0"/>
+      <value value="Release"/>
     </parameter>   
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="auto-oid-root"/>
       </code>    
-      <value value="2.16.840.1.113883.4.642.40.49"/>
+      <value value="2.16.840.1.113883.4.642.40.50"/>
     </parameter>     
     <parameter>
       <code>

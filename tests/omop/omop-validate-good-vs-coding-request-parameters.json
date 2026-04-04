@@ -1,0 +1,14 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "coding",
+    "valueCoding" : {
+      "system" : "https://fhir-terminology.ohdsi.org",
+      "code" : "36274733",
+      "display" : "Furosemide Injection [Lasix]"
+    }
+  },{
+    "name" : "url",
+    "valueUri" : "https://fhir-terminology.ohdsi.org/ValueSet/Drug"
+  }]
+}

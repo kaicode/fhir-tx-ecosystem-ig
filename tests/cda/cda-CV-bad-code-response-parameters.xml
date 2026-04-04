@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parameters xmlns="http://hl7.org/fhir">
+  <parameter>
+    <name value="code"/>
+    <valueCode value="code1x"/>
+  </parameter>
+  <parameter>
+    <name value="issues"/>
+    <resource>
+      <OperationOutcome>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueString value="None_of_the_provided_codes_are_in_the_value_set_one"/>
+          </extension>
+          <severity value="error"/>
+          <code value="code-invalid"/>
+          <details>
+            <coding>
+              <system value="http://hl7.org/fhir/tools/CodeSystem/tx-issue-type"/>
+              <code value="not-in-vs"/>
+            </coding>
+            <text value="$external:1:http://hl7.org/fhir/test/ValueSet/simple-all|5.0.0$"/>
+          </details>
+          <location value="CV.code"/>
+          <expression value="CV.code"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueString value="Unknown_Code_in_Version"/>
+          </extension>
+          <severity value="error"/>
+          <code value="code-invalid"/>
+          <details>
+            <coding>
+              <system value="http://hl7.org/fhir/tools/CodeSystem/tx-issue-type"/>
+              <code value="invalid-code"/>
+            </coding>
+            <text value="$external:2:urn:oid:2.16.840.1.113883.4.642.40.50.10.1$"/>
+          </details>
+          <location value="CV.code"/>
+          <expression value="CV.code"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="message"/>
+    <valueString value="$external:3:urn:oid:2.16.840.1.113883.4.642.40.50.10.1$"/>
+  </parameter>
+  <parameter>
+    <name value="result"/>
+    <valueBoolean value="false"/>
+  </parameter>
+  <parameter>
+    <name value="system"/>
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.40.50.10.1"/>
+  </parameter>
+</Parameters>

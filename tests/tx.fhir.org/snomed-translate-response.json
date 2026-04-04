@@ -1,0 +1,37 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "match",
+    "part" : [{
+      "name" : "concept",
+      "valueCoding" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20250201",
+        "code" : "441207001",
+        "display" : "Position communication aid near subject (procedure)"
+      }
+    },
+    {
+      "$optional$" : true,
+      "name" : "relationship",
+      "valueCode" : "equivalent"
+    },
+    {
+      "$optional$" : true,
+      "name" : "equivalence",
+      "valueCode" : "equivalent"
+    }]
+  },
+  {
+    "name" : "result",
+    "valueBoolean" : true
+  },
+  {
+    "name" : "used-conceptmap",
+    "valueUri" : "system() {\n    return 'http://snomed.info/sct';\n  }?fhir_cm=900000000000526001|http://snomed.info/sct/900000000000207008/version/20250201"
+  },
+  {
+    "name" : "used-system",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+  }]
+}

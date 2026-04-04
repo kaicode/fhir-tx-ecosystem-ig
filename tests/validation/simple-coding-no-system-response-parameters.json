@@ -10,6 +10,11 @@
       "resourceType" : "OperationOutcome",
       "issue" : [{
         "$optional-properties$" : ["location" ],
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+        }],
         "severity" : "error",
         "code" : "code-invalid",
         "details" : {
@@ -25,6 +30,11 @@
       },
       {
         "$optional-properties$" : ["location" ],
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "Coding_has_no_system__cannot_validate"
+        }],
         "severity" : "warning",
         "code" : "invalid",
         "details" : {

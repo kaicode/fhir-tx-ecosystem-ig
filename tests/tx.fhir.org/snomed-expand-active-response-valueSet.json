@@ -1,0 +1,48 @@
+{
+  "$optional-properties$" : ["id", "date", "publisher", "compose"],
+  "resourceType" : "ValueSet",
+  "id" : "$id$",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "$uuid$",
+    "timestamp" : "$instant$",
+    "total" : 6,
+    "parameter" : [{
+      "name" : "used-codesystem",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "10750161000119106",
+      "display" : "Cholestasis of pregnancy complicating childbirth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10807061000119103",
+      "display" : "Liver disorder in childbirth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "15230009",
+      "display" : "Liver disorder in pregnancy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "235888006",
+      "display" : "Intrahepatic cholestasis of pregnancy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "716379000",
+      "display" : "Acute fatty liver of pregnancy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "91162000",
+      "display" : "Necrosis of liver of pregnancy"
+    }]
+  }
+}

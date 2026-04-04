@@ -4,6 +4,10 @@
   "id" : "simple",
   "url" : "http://hl7.org/fhir/test/CodeSystem/simple",
   "version" : "0.1.0",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.50.10.1"
+  }],
   "name" : "SimpleTestCodeSystem",
   "title" : "Simple Test Code System",
   "status" : "active",
@@ -11,6 +15,7 @@
   "date" : "2023-04-01",
   "publisher" : "FHIR Project",
   "caseSensitive" : true,
+  "hierarchyMeaning" : "is-a",
   "content" : "complete",
   "property" : [{
     "code" : "prop",
@@ -57,7 +62,7 @@
       "valueCode" : "new"
     },{
       "code" : "notSelectable",
-      "valueBoolean" : "true"
+      "valueBoolean" : true
     },{
       "code" : "status",
       "valueCode" : "retired"

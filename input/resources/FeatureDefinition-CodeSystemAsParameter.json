@@ -1,0 +1,12 @@
+{
+  "resourceType" : "FeatureDefinition",
+  "id" : "CodeSystemAsParameter",
+  "context" : [
+    "http://hl7.org/fhir/StructureDefinition/CapabilityStatement#CapabilityStatement"
+  ],
+  "url" : "http://hl7.org/fhir/uv/tx-ecosystem/FeatureDefinition/CodeSystemAsParameter",
+  "name" : "CodeSystemAsParameter",
+  "description" : "This feature is used to that providing CodeSystem resources in the txResource parameter is supported (note that supplements and value sets are required to be supported but CodeSystems are only required to be supported on general purpose servers, not CodeSystem specific servers). This feature must be present, but may have value true or false",
+  "status" : "active",
+  "valueType" : "boolean"
+}

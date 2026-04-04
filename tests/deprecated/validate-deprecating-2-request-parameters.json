@@ -1,0 +1,13 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "url",
+    "valueUri" : "http://hl7.org/fhir/test/ValueSet/deprecating"
+  },{
+    "name" : "coding",
+    "valueCoding" : {
+      "code" : "code3",
+      "system" : "http://hl7.org/fhir/test/CodeSystem/draft"
+    }
+  }]
+}

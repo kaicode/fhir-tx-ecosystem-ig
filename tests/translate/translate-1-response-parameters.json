@@ -10,8 +10,18 @@
       }
     },
     {
+      "$optional$" : true,
       "name" : "equivalence",
-      "valueCode" : "Equivalent"
+      "valueCode" : "equivalent"
+    },
+    {
+      "name" : "originMap",
+      "valueCanonical" : "http://hl7.org/fhir/test/ConceptMap/full|0.1.0"
+    },
+    {
+      "$optional$" : true,
+      "name" : "relationship",
+      "valueCode" : "equivalent"
     }]
   },
   {

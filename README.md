@@ -1,6 +1,6 @@
 # Terminology Ecosystem IG
 
-This documents the L& terminology ecosystem - policies and test cases.
+This documents the HL7 terminology ecosystem - policies and test cases.
 
 ## FHIR Foundation Project Statement
 

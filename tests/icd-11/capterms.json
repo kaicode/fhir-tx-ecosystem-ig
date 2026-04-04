@@ -1,0 +1,41 @@
+{
+  "resourceType": "TerminologyCapabilities",
+  "version": "$token$",
+  "name": "$token$",
+  "title": "$string$",
+  "status": "$token$",
+  "date": "$date$",
+  "kind" : "instance",
+  "codeSystem" : [{
+    "uri" : "http://id.who.int/icd/entity"
+  },{
+    "uri" : "http://id.who.int/icd/release/11/icf"
+  },{
+    "uri" : "http://id.who.int/icd/release/11/mms"
+  }],
+  "expansion": {
+    "parameter": [{
+      "name": "activeOnly"
+    },{
+      "name": "count"
+    },{
+      "name": "displayLanguage"
+    },{
+      "name": "excludeNested"
+    },{
+      "name": "force-system-version"
+    },{
+      "name": "includeDefinition"
+    },{
+      "name": "includeDesignations"
+    },{
+      "name": "offset"
+    },{
+      "name": "property"
+    },{
+      "name": "system-version"
+    },{
+      "name": "tx-resource"
+    }]
+  }
+}

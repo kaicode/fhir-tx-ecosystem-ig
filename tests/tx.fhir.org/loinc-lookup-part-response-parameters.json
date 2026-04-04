@@ -1,10 +1,12 @@
 {
   "resourceType" : "Parameters",
   "parameter" : [{
+    "$optional$" : true,
     "name" : "abstract",
     "valueBoolean" : false
   },
   {
+    "$optional$" : true,
     "name" : "code",
     "valueCode" : "LP111373-9"
   },
@@ -16,9 +18,12 @@
     },
     {
       "name" : "use",
+      "$optional$" : true,
       "valueCoding" : {
+        "$optional-properties$" : ["display"],
         "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-        "code" : "preferredForLanguage"
+        "code" : "preferredForLanguage",
+        "display" : "Preferred For Language"
       }
     },
     {
@@ -209,11 +214,20 @@
     }]
   },
   {
+    "$optional$" : true,
     "name" : "system",
     "valueUri" : "http://loinc.org"
   },
   {
+    "name" : "used-supplement",
+    "valueCanonical" : "https://terminology.dhp.uz/fhir/CodeSystem/loinc-supplement-uz|2.80"
+  },
+  {
+    "name" : "used-supplement",
+    "valueCanonical" : "http://fhir.de/CodeSystem/loinc-supplement-basis|0.9.13"
+  },
+  {
     "name" : "version",
-    "valueString" : "2.81"
+    "valueString" : "2.82"
   }]
 }

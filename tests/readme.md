@@ -1,6 +1,6 @@
 # What's in here
 
-This folder contains a set of Version independent test cases for R3 - R5 that test:
+This folder contains a set of Version independent test cases for R4 and R5 that test:
 
 * simple expansion and validation against value set + code system
 * testing out versions
@@ -26,13 +26,14 @@ java -jar {validator} -txtests -source {root folder for this repo} -tx {server t
 Other command line parameters for ```-txtests```:
 
 * ```-output {folder}```: A folder in witch to place the output of failing tests. Note that the output is in R5 format irrespective of the version of the server running, and mimics the folder structure of the input, so that you can diff the input and output to see the differences
-* ```-version {v}```: The version of the server. R3, R4, and R5 are supported. 
 * ```-externals {file}``` : The file in which external strings are found. Different servers have slightly different error messages. In the absence of external strings, only the pattern is tested
 * ```-filter {string}```: If this is provided, only test names that include this string will be executed (to make testing faster)
 * ```-modes {string(,string)}```:  If this is provided, the tests with the specified mode (in the suite in test-case.json) will be executed
 * ```-api-key {string}```: An API Key that is passed to the server in the ```Authorization``` header
 
 If the tests pass, the final output is a statement of compliance in the correct form to be used in the tested products release notes.
+
+The version is auto-determined based on the version the server end point is running.
 
 ##  Modes
 

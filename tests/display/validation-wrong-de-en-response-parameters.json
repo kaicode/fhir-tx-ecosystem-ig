@@ -13,6 +13,11 @@
     "resource" : {
       "resourceType" : "OperationOutcome",
       "issue" : [{
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_ERR"
+        }],
         "severity" : "error",
         "code" : "invalid",
         "details" : {

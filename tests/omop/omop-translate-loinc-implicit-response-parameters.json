@@ -1,0 +1,40 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "match",
+    "part" : [{
+      "name" : "concept",
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LP405117-5",
+        "display" : "Chest | X-ray | Radiology"
+      }
+    },
+    {
+      "$optional$" : true,
+      "name" : "equivalence",
+      "valueCode" : "equivalent"
+    },
+    {
+      "name" : "originMap",
+      "valueCanonical" : "https://fhir-terminology.ohdsi.org/ConceptMap/44819102|"
+    },
+    {
+      "$optional$" : true,
+      "name" : "relationship",
+      "valueCode" : "equivalent"
+    }]
+  },
+  {
+    "name" : "result",
+    "valueBoolean" : true
+  },
+  {
+    "name" : "used-conceptmap",
+    "valueUri" : "https://fhir-terminology.ohdsi.org/ConceptMap/to-44819102|20240716"
+  },
+  {
+    "name" : "used-system",
+    "valueUri" : "https://fhir-terminology.ohdsi.org|20240716"
+  }]
+}

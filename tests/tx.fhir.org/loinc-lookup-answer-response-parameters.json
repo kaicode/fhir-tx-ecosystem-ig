@@ -1,12 +1,29 @@
 {
   "resourceType" : "Parameters",
   "parameter" : [{
+    "$optional$" : true,
     "name" : "abstract",
     "valueBoolean" : false
   },
   {
+    "$optional$" : true,
     "name" : "code",
     "valueCode" : "LA4489-6"
+  },
+  {
+    "name" : "designation",
+    "part" : [{
+      "name" : "language",
+      "valueCode" : "de-DE"
+    },
+    {
+      "name" : "source",
+      "valueCanonical" : "http://fhir.de/CodeSystem/loinc-supplement-basis|0.9.13"
+    },
+    {
+      "name" : "value",
+      "valueString" : "unbekannt"
+    }]
   },
   {
     "name" : "designation",
@@ -16,10 +33,12 @@
     },
     {
       "name" : "use",
+	  "$optional$" : true,
       "valueCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "LONG_COMMON_NAME",
-        "display" : "LONG_COMMON_NAME"
+        "$optional-properties$" : ["display"],
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage",
+        "display" : "Preferred For Language"
       }
     },
     {
@@ -2584,6 +2603,325 @@
     },
     {
       "name" : "value",
+      "valueCode" : "LL6944-4"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL6950-1"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7005-3"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7235-6"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7236-4"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7251-3"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7253-9"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7255-4"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7257-0"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7259-6"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7261-2"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7263-8"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7265-3"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7267-9"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7269-5"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7271-1"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7273-7"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7275-2"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7277-8"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7279-4"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7281-0"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7311-5"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7316-4"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7317-2"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7318-0"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7319-8"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7320-6"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7323-0"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "LL7524-3"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "AnswerList"
+    },
+    {
+      "name" : "value",
       "valueCode" : "LL760-0"
     }]
   },
@@ -2797,11 +3135,20 @@
     }]
   },
   {
+    "$optional$" : true,
     "name" : "system",
     "valueUri" : "http://loinc.org"
   },
   {
+    "name" : "used-supplement",
+    "valueCanonical" : "https://terminology.dhp.uz/fhir/CodeSystem/loinc-supplement-uz|2.80"
+  },
+  {
+    "name" : "used-supplement",
+    "valueCanonical" : "http://fhir.de/CodeSystem/loinc-supplement-basis|0.9.13"
+  },
+  {
     "name" : "version",
-    "valueString" : "2.78"
+    "valueString" : "2.82"
   }]
 }

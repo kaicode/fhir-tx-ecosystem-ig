@@ -13,18 +13,23 @@
   "expansion" : {
     "identifier" : "$uuid$",
     "timestamp" : "$instant$",
-    "total" : 422,
+    "total" : 430,
     "parameter" : [{
       "name" : "excludeNested",
       "valueBoolean" : true
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "http://loinc.org|2.78"
+      "valueUri" : "http://loinc.org|2.82"
     },
     {
-      "name" : "version",
-      "valueUri" : "http://loinc.org|2.78"
+      "$optional$" : true,
+      "name" : "used-supplement",
+      "valueUri" : "http://fhir.de/CodeSystem/loinc-supplement-basis|0.9.13"
+    }],
+    "property" : [{
+      "code" : "status",
+      "uri" : "http://hl7.org/fhir/concept-properties#status"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -128,8 +133,43 @@
     },
     {
       "system" : "http://loinc.org",
+      "code" : "106016-9",
+      "display" : "Bacteria identified in Penis by Culture"
+    },
+    {
+      "system" : "http://loinc.org",
       "code" : "106018-5",
       "display" : "Bacteria [#/volume] in Semen by Culture"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "106032-6",
+      "display" : "Bacteria identified in Pus by Culture"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "106033-4",
+      "display" : "Bacteria identified in Pus by Anaerobe culture"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "106036-7",
+      "display" : "Bacteria identified in Fistula by Culture"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "106037-5",
+      "display" : "Bacteria identified in Fistula by Anaerobe culture"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "106042-5",
+      "display" : "Bacteria identified in Mother's milk by Culture"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "107188-5",
+      "display" : "Bacteria identified in Abscess by Anaerobe culture"
     },
     {
       "system" : "http://loinc.org",
@@ -174,7 +214,11 @@
     {
       "system" : "http://loinc.org",
       "code" : "14320-6",
-      "display" : "Deprecated Bacteria identified in Urine by Culture @1:100"
+      "display" : "Deprecated Bacteria identified in Urine by Culture @1:100",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DEPRECATED"
+      }]
     },
     {
       "system" : "http://loinc.org",
@@ -664,7 +708,11 @@
     {
       "system" : "http://loinc.org",
       "code" : "17969-7",
-      "display" : "Deprecated Bacteria identified in Urine by Aerobe culture"
+      "display" : "Deprecated Bacteria identified in Urine by Aerobe culture",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DEPRECATED"
+      }]
     },
     {
       "system" : "http://loinc.org",
@@ -704,7 +752,7 @@
     {
       "system" : "http://loinc.org",
       "code" : "19127-0",
-      "display" : "Bacteria identified in Sputum by Acute Respiratoy Distress (ARDS) culture"
+      "display" : "Bacteria identified in Sputum by Acute Respiratory Distress (ARDS) culture"
     },
     {
       "system" : "http://loinc.org",
@@ -819,7 +867,11 @@
     {
       "system" : "http://loinc.org",
       "code" : "41741-0",
-      "display" : "Deprecated Bacteria identified in Unspecified specimen"
+      "display" : "Deprecated Bacteria identified in Unspecified specimen",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DEPRECATED"
+      }]
     },
     {
       "system" : "http://loinc.org",
@@ -834,7 +886,11 @@
     {
       "system" : "http://loinc.org",
       "code" : "42806-0",
-      "display" : "Deprecated Bacteria identified in Isolate"
+      "display" : "Deprecated Bacteria identified in Isolate",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DEPRECATED"
+      }]
     },
     {
       "system" : "http://loinc.org",
@@ -1314,7 +1370,11 @@
     {
       "system" : "http://loinc.org",
       "code" : "629-6",
-      "display" : "Deprecated Bacteria identified in Ulcer by Aerobe culture"
+      "display" : "Deprecated Bacteria identified in Ulcer by Aerobe culture",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DEPRECATED"
+      }]
     },
     {
       "system" : "http://loinc.org",
@@ -2135,6 +2195,11 @@
       "system" : "http://loinc.org",
       "code" : "LP443243-3",
       "display" : "Bacteria | Surgical wound | Microbiology"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LP450263-1",
+      "display" : "Bacteria | Prostatic fluid | Microbiology"
     }]
   }
 }

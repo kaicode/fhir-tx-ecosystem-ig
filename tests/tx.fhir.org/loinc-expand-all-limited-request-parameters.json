@@ -2,15 +2,11 @@
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "url",
-    "valueUrl" : "http://hl7.org/fhir/test/ValueSet/loinc-all"
+    "valueUri" : "http://hl7.org/fhir/test/ValueSet/loinc-all"
   },
   {
     "name": "_limit",
     "valueInteger": 10000
-  },
-  {
-    "name": "_incomplete",
-    "valueBoolean": true
   },
   {
     "name": "count",
@@ -23,9 +19,5 @@
   {
     "name": "excludeNested",
     "valueBoolean": false
-  },
-  {
-    "name": "incomplete-ok",
-    "valueBoolean": true
   }]
 }

@@ -16,9 +16,12 @@
     }]
   },
   "expansion" : {
+    "$optional-properties$" : ["id","offset"],
+    "id" : "$id$",
     "identifier" : "$uuid$",
     "timestamp" : "$instant$",
     "total" : 7,
+    "offset" : 0,
     "parameter" : [{
       "name" : "excludeNested",
       "valueBoolean" : true
@@ -29,8 +32,13 @@
     },
     {
       "$optional$" : true,
-      "name" : "version",
-      "valueUri" : "http://hl7.org/fhir/test/CodeSystem/simple|0.1.0"
+      "name" : "displayLanguage",
+      "valueString" : "en"
+    }],
+    "property" : [{
+      "$optional$" : true,
+      "code" : "status",
+      "uri" : "http://hl7.org/fhir/concept-properties#status"
     }],
     "contains" : [{
       "system" : "http://hl7.org/fhir/test/CodeSystem/simple",
@@ -42,7 +50,12 @@
       "abstract" : true,
       "inactive" : true,
       "code" : "code2",
-      "display" : "Display 2"
+      "display" : "Display 2",
+      "property" : [{
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
     },
     {
       "system" : "http://hl7.org/fhir/test/CodeSystem/simple",

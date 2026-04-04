@@ -14,6 +14,11 @@
     "resource" : {
       "resourceType" : "OperationOutcome",
       "issue" : [{
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+        }],
         "severity" : "error",
         "code" : "code-invalid",
         "details" : {
@@ -27,6 +32,11 @@
       },
       {
         "$optional-properties$" : ["location" ],
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "UNKNOWN_CODESYSTEM"
+        }],
         "severity" : "error",
         "code" : "not-found",
         "details" : {
@@ -42,6 +52,11 @@
       },
       {
         "$optional-properties$" : ["location" ],
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+        }],
         "severity" : "information",
         "code" : "code-invalid",
         "details" : {

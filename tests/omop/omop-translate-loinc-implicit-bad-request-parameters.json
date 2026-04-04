@@ -1,0 +1,13 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "sourceSystem",
+    "valueUri" : "https://fhir-terminology.ohdsi.org"
+  },{
+    "name" : "sourceCode",
+    "valueCode" : "4042860"
+  },{
+    "name": "targetSystem",
+    "valueUri" : "http://loinc.org"
+  }]
+}

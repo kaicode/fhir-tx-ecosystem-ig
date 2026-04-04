@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/search-filter",
+  "version": "6.0.0",
+  "name": "SearchFilterTest",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/search",
+        "filter": [
+          {
+            "property": "code",
+            "op": "is-a",
+            "value": "data-exchange"
+          }
+        ]
+      }
+    ]
+  }
+}

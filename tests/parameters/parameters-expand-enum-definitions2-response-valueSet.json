@@ -1,5 +1,5 @@
 {
-  "$optional-properties$" : ["id", "date", "publisher"],
+  "$optional-properties$" : ["id", "date", "publisher", "compose"],
   "resourceType" : "ValueSet",
   "id" : "$id$",
   "url" : "http://hl7.org/fhir/test/ValueSet/simple-enumerated",
@@ -31,12 +31,20 @@
     }]
   },
   "expansion" : {
+    "$optional-properties$" : ["id", "offset"],
+    "id":"$id$",
     "identifier" : "$uuid$",
     "timestamp" : "$instant$",
     "total" : 5,
+    "offset" : 0,
     "parameter" : [{
       "name" : "excludeNested",
       "valueBoolean" : false
+    },
+    {
+      "$optional$" : true,
+      "name" : "includeDefinition",
+      "valueBoolean" : true
     },
     {
       "name" : "includeDesignations",
@@ -54,6 +62,11 @@
     "property" : [{
       "code" : "definition",
       "uri" : "http://hl7.org/fhir/concept-properties#definition"
+    },
+    {
+      "$optional$" : true,
+      "code" : "status",
+      "uri" : "http://hl7.org/fhir/concept-properties#status"
     }],
     "contains" : [{
       "system" : "http://hl7.org/fhir/test/CodeSystem/simple",
@@ -87,6 +100,11 @@
       "property" : [{
         "code" : "definition",
         "valueString" : "My second code, with children"
+      },
+      {
+        "$optional$" : true,
+        "code" : "status",
+        "valueCode" : "retired"
       }]
     },
     {

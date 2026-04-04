@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parameters xmlns="http://hl7.org/fhir">
+  <parameter>
+    <name value="v3CD"/>
+    <valueCD code="code1x" codeSystem="2.16.840.1.113883.4.642.40.50.10.1"/>
+  </parameter>
+  <parameter>
+    <name value="issues"/>
+    <resource>
+      <OperationOutcome>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueString value="TX_GENERAL_CC_ERROR_MESSAGE"/>
+          </extension>
+          <severity value="error"/>
+          <code value="code-invalid"/>
+          <details>
+            <coding>
+              <system value="http://hl7.org/fhir/tools/CodeSystem/tx-issue-type"/>
+              <code value="not-in-vs"/>
+            </coding>
+            <text value="No valid coding was found for the value set &apos;http://hl7.org/fhir/test/ValueSet/simple-all|5.0.0&apos;"/>
+          </details>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueString value="Unknown_Code_in_Version"/>
+          </extension>
+          <severity value="error"/>
+          <code value="code-invalid"/>
+          <details>
+            <coding>
+              <system value="http://hl7.org/fhir/tools/CodeSystem/tx-issue-type"/>
+              <code value="invalid-code"/>
+            </coding>
+            <text value="$external:2:urn:oid:2.16.840.1.113883.4.642.40.50.10.1$"/>
+          </details>
+          <location value="CD.code"/>
+          <expression value="CD.code"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueString value="None_of_the_provided_codes_are_in_the_value_set_one"/>
+          </extension>
+          <severity value="information"/>
+          <code value="code-invalid"/>
+          <details>
+            <coding>
+              <system value="http://hl7.org/fhir/tools/CodeSystem/tx-issue-type"/>
+              <code value="this-code-not-in-vs"/>
+            </coding>
+            <text value="$external:1:http://hl7.org/fhir/test/ValueSet/simple-all|5.0.0$"/>
+          </details>
+          <location value="CD.code"/>
+          <expression value="CD.code"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="message"/>
+    <valueString value="$external:3$"/>
+  </parameter>
+  <parameter>
+    <name value="result"/>
+    <valueBoolean value="false"/>
+  </parameter>
+</Parameters>

@@ -17,20 +17,18 @@
     }]
   },
   "expansion" : {
+    "$optional-properties$" : ["id","offset"],
+    "id" : "$id$",
     "identifier" : "$uuid$",
     "timestamp" : "$instant$",
     "total" : 6,
+    "offset" : 0,
     "parameter" : [{
       "name" : "excludeNested",
       "valueBoolean" : true
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "http://hl7.org/fhir/test/CodeSystem/simple|0.1.0"
-    },
-    {
-      "$optional$" : true,
-      "name" : "version",
       "valueUri" : "http://hl7.org/fhir/test/CodeSystem/simple|0.1.0"
     }],
     "contains" : [{

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "withdrawn",
+  "url" : "http://hl7.org/fhir/test/ValueSet/deprecating",
+  "version" : "5.0.0",
+  "name" : "DeprecatingValueSetAll",
+  "title" : "Deprecating ValueSet All",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-04-01",
+  "publisher" : "FHIR Project",
+  "description" : "A value set that marks a code as deprecated.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/test/CodeSystem/draft",
+      "concept" : [{
+        "code" : "code1"
+      },
+      {
+        "code" : "code2",
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-deprecated",
+          "valueCode" : "true"
+        }]
+      },
+      {
+        "code" : "code3",
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+          "valueCode" : "deprecated"
+        }]
+      }]
+    }]
+  }
+}

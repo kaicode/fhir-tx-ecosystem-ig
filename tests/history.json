@@ -2,6 +2,33 @@
   "title" : "Terminology Tests History",
   "description" : "This page details the changes made to the terminology tests over time based on the github releases. Note that the github repository that contains these tests contains many other test cases for other kind of functionality. This history file only contains entries for github releases that include changes to the terminology tests.",
   "versions" : [{
+    "version" : "1.90",
+    "markdown" : "* Add a set of tests for controlling the version of CodeSystems (ValueSet.compose.include.version, with wildcards, and the expansion parmaeters system-version etc\r\n* revisit the tests to ensure that\r\n* Remove the deprecated 'version' parameter that's no longer used or supported (after 1 year of grace)\r\n* Various improvements to error messages and test descriptions\r\n"
+  },{
+    "version" : "1.7.7-SNAPSHOT",
+    "markdown" : "Define hierarchyMeaning for simple CodeSystem"
+  },{
+    "version" : "1.7.6",
+    "markdown" : "Allow expansion.id & expansion.offset in many tests. Rename valueset-version to default-valueset-version. tx.fhir.org only: Add supplement test cases and LOINC tests for tx.fhir.org for CLASSTYPE, answers-for, and answer-list"
+  },{
+    "version" : "1.7.5",
+    "markdown" : "Add test for validation of displayLanguage"
+  },{
+    "version" : "1.7.4",
+    "markdown" : "Add message id"
+  },{
+    "version" : "1.7.3",
+    "markdown" : "Should systemVersion instead of version"
+  },{
+    "version" : "1.7.2",
+    "markdown" : "Add message-id extension to tests"
+  },{
+    "version" : "1.7.1",
+    "markdown" : "remove language weights except where it matters, add x-caused-by-unknown-system when supplement not found, and Remove R4 variants"
+  },{
+    "version" : "1.7.0",
+    "markdown" : "Move master tests to tx-ecosystem-ig instead of general test cases"
+  },{
     "version" : "1.6.6",
     "markdown" : "* Fix references to wrong value set in supplement tests"
   },{    

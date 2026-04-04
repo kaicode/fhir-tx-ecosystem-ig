@@ -9,6 +9,11 @@
     "resource" : {
       "resourceType" : "OperationOutcome",
       "issue" : [{
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "CODESYSTEM_CS_NO_SUPPLEMENT"
+        }],
         "severity" : "error",
         "code" : "invalid",
         "details" : {
@@ -16,7 +21,7 @@
             "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
             "code" : "invalid-data"
           }],
-          "text" : "CodeSystem http://hl7.org/fhir/test/CodeSystem/supplement is a supplement, so can't be used as a value in Coding.system"
+          "text" : "CodeSystem http://hl7.org/fhir/test/CodeSystem/supplement|0.1.1 is a supplement, so can't be used as a value in Coding.system"
         },
         "location" : ["Coding.system"],
         "expression" : ["Coding.system"]
@@ -25,7 +30,7 @@
   },
   {
     "name" : "message",
-    "valueString" : "CodeSystem http://hl7.org/fhir/test/CodeSystem/supplement is a supplement, so can't be used as a value in Coding.system"
+    "valueString" : "CodeSystem http://hl7.org/fhir/test/CodeSystem/supplement|0.1.1 is a supplement, so can't be used as a value in Coding.system"
   },
   {
     "name" : "result",
@@ -34,5 +39,10 @@
   {
     "name" : "system",
     "valueUri" : "http://hl7.org/fhir/test/CodeSystem/supplement"
+  },
+  {
+    "$optional$" : true,
+    "name" : "x-caused-by-unknown-system",
+    "valueCanonical" : "http://hl7.org/fhir/test/CodeSystem/supplement"
   }]
 }

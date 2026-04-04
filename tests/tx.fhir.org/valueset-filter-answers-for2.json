@@ -1,0 +1,22 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "loinc-filter-answers-for2",
+  "url" : "http://hl7.org/fhir/test/ValueSet/loinc-filter-answers-for2",
+  "version" : "5.0.0",
+  "name" : "LOINCValueSetFilterList",
+  "title" : "LOINC ValueSet Filter by List",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-04-01",
+  "publisher" : "FHIR Project",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "answers-for",
+        "op" : "=", 
+        "value" : "100002-5"
+      }]
+    }]
+  }
+}

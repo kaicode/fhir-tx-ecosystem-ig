@@ -16,9 +16,12 @@
     }]
   },
   "expansion" : {
+    "$optional-properties$" : ["id","offset"],
+    "id" : "$id$",
     "identifier" : "$uuid$",
     "timestamp" : "$instant$",
     "total" : 7,
+    "offset" : 0,
     "parameter" : [{
       "name" : "designation",
       "valueString" : "urn:ietf:bcp:47|de"
@@ -37,11 +40,6 @@
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "http://hl7.org/fhir/test/CodeSystem/en-multi"
-    },
-    {
-      "$optional$" : true,
-      "name" : "version",
       "valueUri" : "http://hl7.org/fhir/test/CodeSystem/en-multi"
     }],
     "contains" : [{

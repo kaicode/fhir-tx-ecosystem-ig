@@ -1,0 +1,22 @@
+{
+  "resourceType": "Parameters",
+  "parameter": [
+    {
+      "name": "valueSet",
+      "resource": {
+        "resourceType": "ValueSet",
+        "url" : "http://hl7.org/fhir/test/ValueSet/exclude-gender",
+        "status": "active",
+        "compose": {
+          "include": [
+            { "valueSet": ["http://hl7.org/fhir/ValueSet/administrative-gender"] },
+            { "system": "http://hl7.org/fhir/publication-status", "concept": [{"code":"active"}] }
+          ],
+          "exclude": [
+            { "system": "http://hl7.org/fhir/administrative-gender", "concept": [{"code":"other"},{"code":"unknown"}] }
+          ]
+        }
+      }
+    }
+  ]
+}

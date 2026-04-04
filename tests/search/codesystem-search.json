@@ -1,0 +1,38 @@
+{
+  "resourceType" : "CodeSystem",
+  "url" : "http://hl7.org/fhir/test/CodeSystem/search",
+  "name" : "ExcludeTestSystem",
+  "status" : "active",
+  "experimental" : false,
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "individual",
+    "display" : "Individual",
+    "definition" : "An individual report that provides information on the performance for a given measure with respect to a single subject."
+  },
+  {
+    "code" : "subject-list",
+    "display" : "Subject List",
+    "definition" : "A subject list report that includes a listing of subjects that satisfied each population criteria in the measure."
+  },
+  {
+    "code" : "summary",
+    "display" : "Summary",
+    "definition" : "A summary report that returns the number of members in each population criteria for the measure."
+  },
+  {
+    "code" : "data-exchange",
+    "display" : "Data Exchange",
+    "concept" : [{
+      "code" : "data-exchange1",
+      "display" : "Data Exchange1"
+    },{
+      "code" : "data-exchange2",
+      "display" : "Data Exchange2"
+    },{
+      "code" : "data-exchange3",
+      "display" : "Data Exchange3"
+    }]
+  }]
+}

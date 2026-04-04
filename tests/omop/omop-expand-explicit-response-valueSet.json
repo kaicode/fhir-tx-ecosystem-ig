@@ -1,0 +1,29 @@
+{
+  "$optional-properties$" : ["id", "date", "publisher", "compose"],
+  "resourceType" : "ValueSet",
+  "url" : "http://hl7.org/fhir/test/ValueSet/omop-filter-domain",
+  "expansion" : {
+    "identifier" : "$uuid$",
+    "timestamp" : "$instant$",
+    "total" : 3,
+    "parameter" : [{
+      "name" : "used-codesystem",
+      "valueUri" : "https://fhir-terminology.ohdsi.org|20240716"
+    }],
+    "contains" : [{
+      "system" : "https://fhir-terminology.ohdsi.org",
+      "code" : "1367571",
+      "display" : "heparin"
+    },
+    {
+      "system" : "https://fhir-terminology.ohdsi.org",
+      "code" : "1383815",
+      "display" : "isosorbide"
+    },
+    {
+      "system" : "https://fhir-terminology.ohdsi.org",
+      "code" : "36274733",
+      "display" : "Furosemide Injection [Lasix]"
+    }]
+  }
+}

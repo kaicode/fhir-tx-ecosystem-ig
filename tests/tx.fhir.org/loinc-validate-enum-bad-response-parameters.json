@@ -9,6 +9,11 @@
     "resource" : {
       "resourceType" : "OperationOutcome",
       "issue" : [{
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+        }],
         "severity" : "error",
         "code" : "code-invalid",
         "details" : {
@@ -22,6 +27,11 @@
         "expression" : ["Coding.code"]
       },
       {
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "Unknown_Code_in_Version"
+        }],
         "severity" : "error",
         "code" : "code-invalid",
         "details" : {
@@ -29,7 +39,7 @@
             "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
             "code" : "invalid-code"
           }],
-          "text" : "Unknown code 'LP111373-9X' in the CodeSystem 'http://loinc.org' version '2.78'"
+          "text" : "Unknown code 'LP111373-9X' in the CodeSystem 'http://loinc.org' version '2.82'"
         },
         "location" : ["Coding.code"],
         "expression" : ["Coding.code"]
@@ -38,7 +48,7 @@
   },
   {
     "name" : "message",
-    "valueString" : "The provided code 'http://loinc.org#LP111373-9X' was not found in the value set 'http://hl7.org/fhir/test/ValueSet/loinc-enumerated|5.0.0'; Unknown code 'LP111373-9X' in the CodeSystem 'http://loinc.org' version '2.78'"
+    "valueString" : "The provided code 'http://loinc.org#LP111373-9X' was not found in the value set 'http://hl7.org/fhir/test/ValueSet/loinc-enumerated|5.0.0'; Unknown code 'LP111373-9X' in the CodeSystem 'http://loinc.org' version '2.82'"
   },
   {
     "name" : "result",
@@ -47,5 +57,10 @@
   {
     "name" : "system",
     "valueUri" : "http://loinc.org"
+  },
+  {
+    "$optional$" : "warning:version",
+    "name" : "version",
+    "valueString" : "2.82"
   }]
 }

@@ -1,0 +1,13 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "system",
+    "valueUri" : "https://fhir-terminology.ohdsi.org"
+  },{
+    "name" : "code",
+    "valueCode" : "4097430"
+  },{
+    "name" : "display",
+    "valueString" : "Not the display"
+  }]
+}

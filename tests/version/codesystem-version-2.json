@@ -4,6 +4,10 @@
   "id" : "version",
   "url" : "http://hl7.org/fhir/test/CodeSystem/version",
   "version" : "1.2.0",
+  "versionAlgorithmCoding" : {
+    "system" : "http://hl7.org/fhir/version-algorithm",
+    "code" : "semver"
+  },
   "name" : "VersionedTestCodeSystem",
   "title" : "Versioned Test Code System",
   "status" : "active",

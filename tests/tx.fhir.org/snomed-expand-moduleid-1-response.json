@@ -1,0 +1,598 @@
+{
+  "$optional-properties$" : ["id", "date", "publisher", "compose"],
+  "resourceType" : "ValueSet",
+  "id" : "$id$",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "$uuid$",
+    "timestamp" : "$instant$",
+    "total" : 116,
+    "parameter" : [{
+      "name" : "used-codesystem",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "102613000",
+      "display" : "Localized abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "102614006",
+      "display" : "Generalized abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "102615007",
+      "display" : "Ulcer-type pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "102626001",
+      "display" : "Liver pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "102628000",
+      "display" : "Gallbladder pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "102831002",
+      "display" : "Renal angle pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10760581000119104",
+      "display" : "Pain in round ligament in pregnancy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1119217009",
+      "display" : "Pain in right lumbar region of abdomen"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1119218004",
+      "display" : "Pain in left lumbar region of abdomen"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "111985007",
+      "display" : "Chronic abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "116290004",
+      "display" : "Acute abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1179692005",
+      "display" : "Prostatitis category 3a"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1179694006",
+      "display" : "Prostatitis category 3b"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "11892641000119101",
+      "display" : "Chronic female pelvic pain syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1197659000",
+      "display" : "Epigastric pain syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1197719006",
+      "display" : "Functional abdominal pain of childhood"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1197734000",
+      "display" : "Chronic proctalgia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "125661000119107",
+      "display" : "Biliary colic with obstruction"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1258954001",
+      "display" : "Lumbar radicular pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1295258000",
+      "display" : "Postoperative pain of intrathecal infusion pump pocket following implantation of intrathecal infusion pump"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1354863007",
+      "display" : "Chronic male primary pelvic pain syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "136571000119109",
+      "display" : "Adult colic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "15803009",
+      "display" : "Bladder pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "162038003",
+      "display" : "Non-colicky abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "162042000",
+      "display" : "Abdominal wall pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "162046002",
+      "display" : "Central abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "162047006",
+      "display" : "Left subcostal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "162048001",
+      "display" : "Right subcostal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "162051008",
+      "display" : "Right iliac fossa pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "162052001",
+      "display" : "Pain in left iliac fossa"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "162053006",
+      "display" : "Suprapubic pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "16580691000119107",
+      "display" : "Chronic urinary bladder pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "16844001",
+      "display" : "Stranguria"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "17329003",
+      "display" : "Ureteric colic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "191977008",
+      "display" : "Psychogenic dysmenorrhoea"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "196791007",
+      "display" : "Appendicular colic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "21005005",
+      "display" : "Burning epigastric pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "21522001",
+      "display" : "Abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "230648001",
+      "display" : "Abdominal cutaneous nerve entrapment syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "235841007",
+      "display" : "Chronic nonspecific abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236554001",
+      "display" : "Pain during inflow of dialysate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236555000",
+      "display" : "Pain during outflow of dialysate"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "238970000",
+      "display" : "Proctodynia"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "247352008",
+      "display" : "Subcostal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "247354009",
+      "display" : "Iliac fossa pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "247361008",
+      "display" : "Evening colic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "247362001",
+      "display" : "Pain on abdominal wall movement"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "266599000",
+      "display" : "Period pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "271681002",
+      "display" : "Stomach ache"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "271832001",
+      "display" : "Flatulence, eructation and gas pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "271853005",
+      "display" : "Hypochondrial pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "271858001",
+      "display" : "Recurrent acute abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "274279008",
+      "display" : "Renal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "274280006",
+      "display" : "Ureteric pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "275406005",
+      "display" : "Appendicular pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "279028009",
+      "display" : "Ovarian pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "285387005",
+      "display" : "Left sided abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "285388000",
+      "display" : "Right sided abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "286993001",
+      "display" : "Dysmenorrhoea - non-psychogenic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "289669005",
+      "display" : "Pain of uterus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "289670006",
+      "display" : "Pain on movement of uterus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "289732000",
+      "display" : "Painful uterine contractions"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "289817003",
+      "display" : "Pain of cervix"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "289818008",
+      "display" : "Pain on movement of cervix"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "289845009",
+      "display" : "Pain on movement of ovary"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "301367001",
+      "display" : "Right hypochondrial pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "301368006",
+      "display" : "Left hypochondrial pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "301715003",
+      "display" : "Left upper quadrant pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "301716002",
+      "display" : "Left lower quadrant pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "301717006",
+      "display" : "Right upper quadrant pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "301754002",
+      "display" : "Right lower quadrant pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "304542004",
+      "display" : "Nonspecific abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307199009",
+      "display" : "Psychosomatic abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "309737007",
+      "display" : "Abdominal pain in pregnancy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "314041007",
+      "display" : "Abdominal pain in early pregnancy"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "314212008",
+      "display" : "Abdominal pain - cause unknown"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "32096006",
+      "display" : "Secondary dysmenorrhea"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "35363006",
+      "display" : "Infantile colic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "36729000",
+      "display" : "Prostatic pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "371094000",
+      "display" : "Colicky hypogastric pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "371102005",
+      "display" : "Generalised colicky abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "37389005",
+      "display" : "Biliary colic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "38654001",
+      "display" : "Recurrent biliary colic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "38731000087104",
+      "display" : "Chronic primary bladder pain syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "38791000087103",
+      "display" : "Chronic pelvic pain syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "39691000087103",
+      "display" : "Chronic secondary visceral pain in abdominal region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "39701000087103",
+      "display" : "Chronic secondary visceral pain in pelvic region"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "414991007",
+      "display" : "Painful rectal bleeding"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "426135001",
+      "display" : "Chronic prostatitis - chronic pelvic pain syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "43548008",
+      "display" : "Mittelschmerz"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "438506002",
+      "display" : "Visceral abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "439469002",
+      "display" : "Recurrent abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "443503005",
+      "display" : "Periumbilical pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "444746004",
+      "display" : "Acute exacerbation of chronic abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "449890002",
+      "display" : "Functional abdominal pain syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "45979003",
+      "display" : "Abdominal wind pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "5268006",
+      "display" : "Mechanical dysmenorrhea"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "54586004",
+      "display" : "Lower abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "60043000",
+      "display" : "Midabdominal crampy pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "62647006",
+      "display" : "Proctalgia fugax"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "65754002",
+      "display" : "Primary dysmenorrhea"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6744007",
+      "display" : "Painful bladder spasm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "69186005",
+      "display" : "Broad ligament laceration syndrome"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "707597009",
+      "display" : "Continuous abdominal pain of left lower quadrant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7093002",
+      "display" : "Renal colic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "71850005",
+      "display" : "Abdominal pain worse on motion"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "722876002",
+      "display" : "Functional heartburn"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "74704000",
+      "display" : "Abdominal pain through to back"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "75879005",
+      "display" : "Abdominal migraine"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "77880009",
+      "display" : "Rectal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "79922009",
+      "display" : "Epigastric pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "83132003",
+      "display" : "Upper abdominal pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "838410008",
+      "display" : "Pain in epigastric region on palpation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "838411007",
+      "display" : "Pain in abdominal region on palpation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "88522004",
+      "display" : "Umbilical pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "9991008",
+      "display" : "Abdominal colic"
+    }]
+  }
+}

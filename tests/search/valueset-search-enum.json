@@ -1,0 +1,19 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/search-enum",
+  "version": "6.0.0",
+  "name": "SearchEnumTest",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/search",
+        "concept": [
+          {
+            "code": "data-exchange"
+          }
+        ]
+      }
+    ]
+  }
+}

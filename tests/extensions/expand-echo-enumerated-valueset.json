@@ -43,9 +43,12 @@
     }]
   },
   "expansion" : {
+    "$optional-properties$" : ["id", "offset"],
+    "id" : "$id$",
     "identifier" : "$uuid$",
     "timestamp" : "$instant$",
     "total" : 5,
+    "offset" : 0,
     "parameter" : [{
       "name" : "includeDesignations",
       "valueBoolean" : true
@@ -56,16 +59,6 @@
     },
     {
       "name" : "used-supplement",
-      "valueUri" : "http://hl7.org/fhir/test/CodeSystem/supplement|0.1.1"
-    },
-    {
-      "$optional$" : true,
-      "name" : "version",
-      "valueUri" : "http://hl7.org/fhir/test/CodeSystem/extensions"
-    },
-    {
-      "$optional$" : true,
-      "name" : "version",
       "valueUri" : "http://hl7.org/fhir/test/CodeSystem/supplement|0.1.1"
     }],
     "property" : [{
@@ -79,6 +72,10 @@
     {
       "code" : "order",
       "uri" : "http://hl7.org/fhir/concept-properties#order"
+    },
+    {
+      "code" : "status",
+      "uri" : "http://hl7.org/fhir/concept-properties#status"
     }],
     "contains" : [{
       "extension" : [{
@@ -132,6 +129,14 @@
       "code" : "code2",
       "display" : "Display 2",
       "designation" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+          "valueCode" : "withdrawn"
+        }],
+        "language" : "de",
+        "value" : "2nd Code"
+      },
+      {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/coding-sctdescid",
           "valueId" : "345356"
@@ -213,6 +218,10 @@
       {
         "code" : "order",
         "valueDecimal" : 4
+      },
+      {
+        "code" : "status",
+        "valueCode" : "deprecated"
       }]
     }]
   }

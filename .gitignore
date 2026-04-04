@@ -42,3 +42,6 @@ _genonce.sh
 /FHIR-tools.xml
 
 translations/
+snowstormx
+
+Requirements-fromNarrative.json

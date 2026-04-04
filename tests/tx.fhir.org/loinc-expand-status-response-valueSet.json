@@ -13,7 +13,6 @@
   "expansion" : {
     "identifier" : "$uuid$",
     "timestamp" : "$instant$",
-    "total" : 1501,
     "offset" : 0,
     "parameter" : [{
       "name" : "count",
@@ -24,520 +23,1021 @@
       "valueBoolean" : false
     },
     {
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
       "name" : "offset",
       "valueInteger" : 0
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "http://loinc.org|2.78"
+      "valueUri" : "http://loinc.org|2.82"
     },
     {
-      "name" : "version",
-      "valueUri" : "http://loinc.org|2.78"
+      "$optional$" : true,
+      "name" : "used-supplement",
+      "valueUri" : "http://fhir.de/CodeSystem/loinc-supplement-basis|0.9.13"
+    }],
+    "property" : [{
+      "code" : "status",
+      "uri" : "http://hl7.org/fhir/concept-properties#status"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
+      "inactive" : true,
+      "code" : "102006-4",
+      "display" : "von Willebrand factor.platelet binding activity without ristocetin [Units/volume] in Platelet poor plasma by Latex agglutination",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "inactive" : true,
+      "code" : "105046-7",
+      "display" : "aPTT.factor substitution [Time Ratio] in Control Platelet poor plasma by Coagulation assay --2H post incubation with 1:1 normal plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "inactive" : true,
+      "code" : "105048-3",
+      "display" : "aPTT.factor substitution [Time Ratio] in Control Platelet poor plasma by Coagulation assay --immediately after addition of normal plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "inactive" : true,
+      "code" : "105049-1",
+      "display" : "Prothrombin time (PT) factor substitution [Time Ratio] in Control Platelet poor plasma by Coagulation assay --2H post incubation with 1:1 normal plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "10735-9",
-      "display" : "Viral sequencing [Identifier] in Serum by Sequencing"
+      "display" : "Virus identified in Serum by Sequencing",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "10875-3",
-      "display" : "Carnitine esters [Mass/volume] in Urine"
+      "display" : "Carnitine esters [Mass/volume] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "10876-1",
-      "display" : "Carnitine esters [Mass/volume] in Serum or Plasma"
+      "display" : "Carnitine esters [Mass/volume] in Serum or Plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "10877-9",
-      "display" : "Carnitine free (C0) [Mass/volume] in Urine"
+      "display" : "Carnitine free (C0) [Mass/volume] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "10879-5",
-      "display" : "Isovalerylglycine [Mass/volume] in Urine"
+      "display" : "Isovalerylglycine [Mass/volume] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "10887-8",
-      "display" : "Pyridinoline [Mass/time] in 24 hour Urine"
+      "display" : "Pyridinoline [Mass/time] in 24 hour Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "10972-8",
-      "display" : "Organic acids [Mass/volume] in Urine"
+      "display" : "Organic acids [Mass/volume] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "11022-1",
-      "display" : "Barbiturates [Mass/volume] in Meconium"
+      "display" : "Barbiturates [Mass/volume] in Meconium",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "11023-9",
-      "display" : "Benzodiazepines [Mass/volume] in Meconium"
+      "display" : "Benzodiazepines [Mass/volume] in Meconium",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "11025-4",
-      "display" : "Methadone [Mass/volume] in Meconium"
+      "display" : "Methadone [Mass/volume] in Meconium",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "11026-2",
-      "display" : "Methaqualone [Mass/volume] in Meconium"
+      "display" : "Methaqualone [Mass/volume] in Meconium",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "11033-8",
-      "display" : "Thyrotropin [Mass/volume] in Serum or Plasma --45 minutes post dose TRH IV"
+      "display" : "Thyrotropin [Mass/volume] in Serum or Plasma --45 minutes post dose TRH IV",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "11148-4",
-      "display" : "Potassium/Creatinine [Mass Ratio] in Urine"
+      "display" : "Potassium/Creatinine [Mass Ratio] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "11149-2",
-      "display" : "Sodium/Creatinine [Mass Ratio] in Urine"
+      "display" : "Sodium/Creatinine [Mass Ratio] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "11216-9",
-      "display" : "Deoxypyridinoline [Mass/volume] in Urine"
+      "display" : "Deoxypyridinoline [Mass/volume] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12250-7",
-      "display" : "Reticulocytes/1000 erythrocytes hematocrit adjusted in Blood"
+      "display" : "Reticulocytes/1000 erythrocytes hematocrit adjusted in Blood",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12283-8",
-      "display" : "Corticotropin releasing hormone [Units/volume] in Serum or Plasma"
+      "display" : "Corticotropin releasing hormone [Units/volume] in Serum or Plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12284-6",
-      "display" : "Growth hormone-releasing hormone [Units/volume] in Serum or Plasma"
+      "display" : "Growth hormone-releasing hormone [Units/volume] in Serum or Plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12421-4",
-      "display" : "Thiosulfate/Creatinine [Mass Ratio] in Urine"
+      "display" : "Thiosulfate/Creatinine [Mass Ratio] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12471-9",
-      "display" : "Amino beta guanidinopropionate [Mass/volume] in Urine"
+      "display" : "Amino beta guanidinopropionate [Mass/volume] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12472-7",
-      "display" : "Amino beta guanidinopropionate [Mass/volume] in 24 hour Urine"
+      "display" : "Amino beta guanidinopropionate [Mass/volume] in 24 hour Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12473-5",
-      "display" : "Phosphoethanolamine [Mass/time] in Urine"
+      "display" : "Phosphoethanolamine [Mass/time] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12474-3",
-      "display" : "Carnosine [Mass/volume] in 24 hour Urine"
+      "display" : "Carnosine [Mass/volume] in 24 hour Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12475-0",
-      "display" : "Delta aminolevulinate [Mass/time] in Urine"
+      "display" : "Delta aminolevulinate [Mass/time] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12479-2",
-      "display" : "Androsterone [Mass/time] in Urine"
+      "display" : "Androsterone [Mass/time] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12539-3",
-      "display" : "2-Methylcitrate [Mass/volume] in Urine"
+      "display" : "2-Methylcitrate [Mass/volume] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12540-1",
-      "display" : "2-Methylcitrate [Mass/volume] in Serum or Plasma"
+      "display" : "2-Methylcitrate [Mass/volume] in Serum or Plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12599-7",
-      "display" : "Pristanate (C15:0(CH3)4) [Mass/volume] in Serum or Plasma"
+      "display" : "Pristanate (C15:0(CH3)4) [Mass/volume] in Serum or Plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12660-7",
-      "display" : "Follitropin [Moles/volume] in Serum or Plasma --3 hours post XXX challenge"
+      "display" : "Follitropin [Moles/volume] in Serum or Plasma --3 hours post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12661-5",
-      "display" : "Follitropin [Moles/volume] in Serum or Plasma --10 minutes post XXX challenge"
+      "display" : "Follitropin [Moles/volume] in Serum or Plasma --10 minutes post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12662-3",
-      "display" : "Follitropin [Moles/volume] in Serum or Plasma --20 minutes post XXX challenge"
+      "display" : "Follitropin [Moles/volume] in Serum or Plasma --20 minutes post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12663-1",
-      "display" : "Follitropin [Moles/volume] in Serum or Plasma --40 minutes post XXX challenge"
+      "display" : "Follitropin [Moles/volume] in Serum or Plasma --40 minutes post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12664-9",
-      "display" : "Follitropin [Moles/volume] in Serum or Plasma --2nd specimen post XXX challenge"
+      "display" : "Follitropin [Moles/volume] in Serum or Plasma --2nd specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12665-6",
-      "display" : "Follitropin [Moles/volume] in Serum or Plasma --3rd specimen post XXX challenge"
+      "display" : "Follitropin [Moles/volume] in Serum or Plasma --3rd specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12666-4",
-      "display" : "Follitropin [Moles/volume] in Serum or Plasma --4th specimen post XXX challenge"
+      "display" : "Follitropin [Moles/volume] in Serum or Plasma --4th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12667-2",
-      "display" : "Follitropin [Moles/volume] in Serum or Plasma --5th specimen post XXX challenge"
+      "display" : "Follitropin [Moles/volume] in Serum or Plasma --5th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12668-0",
-      "display" : "Follitropin [Moles/volume] in Serum or Plasma --6th specimen post XXX challenge"
+      "display" : "Follitropin [Moles/volume] in Serum or Plasma --6th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12669-8",
-      "display" : "Follitropin [Moles/volume] in Serum or Plasma --7th specimen post XXX challenge"
+      "display" : "Follitropin [Moles/volume] in Serum or Plasma --7th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12670-6",
-      "display" : "Follitropin [Moles/volume] in Serum or Plasma --8th specimen post XXX challenge"
+      "display" : "Follitropin [Moles/volume] in Serum or Plasma --8th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12671-4",
-      "display" : "Follitropin [Moles/volume] in Serum or Plasma --9th specimen post XXX challenge"
+      "display" : "Follitropin [Moles/volume] in Serum or Plasma --9th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12672-2",
-      "display" : "Lutropin [Moles/volume] in Serum or Plasma --10 minutes post XXX challenge"
+      "display" : "Lutropin [Moles/volume] in Serum or Plasma --10 minutes post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12673-0",
-      "display" : "Lutropin [Moles/volume] in Serum or Plasma --3 hours post XXX challenge"
+      "display" : "Lutropin [Moles/volume] in Serum or Plasma --3 hours post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12674-8",
-      "display" : "Lutropin [Moles/volume] in Serum or Plasma --15 minutes pre XXX challenge"
+      "display" : "Lutropin [Moles/volume] in Serum or Plasma --15 minutes pre XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12675-5",
-      "display" : "Lutropin [Moles/volume] in Serum or Plasma --20 minutes post XXX challenge"
+      "display" : "Lutropin [Moles/volume] in Serum or Plasma --20 minutes post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12676-3",
-      "display" : "Lutropin [Moles/volume] in Serum or Plasma --40 minutes post XXX challenge"
+      "display" : "Lutropin [Moles/volume] in Serum or Plasma --40 minutes post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12677-1",
-      "display" : "Lutropin [Moles/volume] in Serum or Plasma --2nd specimen post XXX challenge"
+      "display" : "Lutropin [Moles/volume] in Serum or Plasma --2nd specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12678-9",
-      "display" : "Lutropin [Moles/volume] in Serum or Plasma --3rd specimen post XXX challenge"
+      "display" : "Lutropin [Moles/volume] in Serum or Plasma --3rd specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12679-7",
-      "display" : "Lutropin [Moles/volume] in Serum or Plasma --4th specimen post XXX challenge"
+      "display" : "Lutropin [Moles/volume] in Serum or Plasma --4th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12680-5",
-      "display" : "Lutropin [Moles/volume] in Serum or Plasma --5th specimen post XXX challenge"
+      "display" : "Lutropin [Moles/volume] in Serum or Plasma --5th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12681-3",
-      "display" : "Lutropin [Moles/volume] in Serum or Plasma --6th specimen post XXX challenge"
+      "display" : "Lutropin [Moles/volume] in Serum or Plasma --6th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12682-1",
-      "display" : "Lutropin [Moles/volume] in Serum or Plasma --7th specimen post XXX challenge"
+      "display" : "Lutropin [Moles/volume] in Serum or Plasma --7th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12683-9",
-      "display" : "Lutropin [Moles/volume] in Serum or Plasma --8th specimen post XXX challenge"
+      "display" : "Lutropin [Moles/volume] in Serum or Plasma --8th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12684-7",
-      "display" : "Lutropin [Moles/volume] in Serum or Plasma --9th specimen post XXX challenge"
+      "display" : "Lutropin [Moles/volume] in Serum or Plasma --9th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12685-4",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --2nd specimen post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --2nd specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12686-2",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --3rd specimen post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --3rd specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12687-0",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --4th specimen post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --4th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12688-8",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --5th specimen post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --5th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12689-6",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --6th specimen post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --6th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12690-4",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --7th specimen post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --7th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12691-2",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --8th specimen post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --8th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12692-0",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --9th specimen post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --9th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12693-8",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --10th specimen post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --10th specimen post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12694-6",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12695-3",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --15 minutes pre XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --15 minutes pre XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12696-1",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --pre XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --pre XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12697-9",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --10 minutes post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --10 minutes post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12698-7",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --15 minutes post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --15 minutes post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12699-5",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --20 minutes post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --20 minutes post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12700-1",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --45 minutes post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --45 minutes post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12701-9",
-      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --2.5 hours post XXX challenge"
+      "display" : "Somatotropin [Moles/volume] in Serum or Plasma --2.5 hours post XXX challenge",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12715-9",
-      "display" : "Homovanillate [Mass/time] in Urine"
+      "display" : "Homovanillate [Mass/time] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12721-7",
-      "display" : "Melatonin [Units/volume] in Serum or Plasma"
+      "display" : "Melatonin [Units/volume] in Serum or Plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12732-4",
-      "display" : "Interleukin 12 [Units/volume] in Serum or Plasma"
+      "display" : "Interleukin 12 [Units/volume] in Serum or Plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12777-9",
-      "display" : "Kappa light chains.free [Units/volume] in Urine"
+      "display" : "Kappa light chains.free [Units/volume] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12778-7",
-      "display" : "Lambda light chains.free [Units/volume] in Urine"
+      "display" : "Lambda light chains.free [Units/volume] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12779-5",
-      "display" : "Nickel [Mass/time] in Urine"
+      "display" : "Nickel [Mass/time] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12808-2",
-      "display" : "Uroporphyrin [Mass/time] in Urine"
+      "display" : "Uroporphyrin [Mass/time] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "12809-0",
-      "display" : "Coproporphyrin [Mass/time] in Urine"
+      "display" : "Coproporphyrin [Mass/time] in Urine",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13055-9",
-      "display" : "Heparin [Units/volume] in Platelet poor plasma"
+      "display" : "Heparin [Units/volume] in Platelet poor plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13130-0",
-      "display" : "Motilin [Units/volume] in Serum or Plasma"
+      "display" : "Motilin [Units/volume] in Serum or Plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13364-5",
-      "display" : "Amino beta guanidinopropionate [Mass/volume] in Plasma"
+      "display" : "Amino beta guanidinopropionate [Mass/volume] in Plasma",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13365-2",
-      "display" : "Amino beta guanidinopropionate [Mass/volume] in Cerebral spinal fluid"
+      "display" : "Amino beta guanidinopropionate [Mass/volume] in Cerebral spinal fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13366-0",
-      "display" : "Alpha aminoadipate [Mass/volume] in Cerebral spinal fluid"
+      "display" : "Alpha aminoadipate [Mass/volume] in Cerebral spinal fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13367-8",
-      "display" : "Beta aminoisobutyrate [Mass/volume] in Cerebral spinal fluid"
+      "display" : "Beta aminoisobutyrate [Mass/volume] in Cerebral spinal fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13368-6",
-      "display" : "Beta alanine [Mass/volume] in Cerebral spinal fluid"
+      "display" : "Beta alanine [Mass/volume] in Cerebral spinal fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13369-4",
-      "display" : "Carnosine [Mass/volume] in Cerebral spinal fluid"
+      "display" : "Carnosine [Mass/volume] in Cerebral spinal fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13370-2",
-      "display" : "Cystathionine [Mass/volume] in Cerebral spinal fluid"
+      "display" : "Cystathionine [Mass/volume] in Cerebral spinal fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13373-6",
-      "display" : "Hydroxylysine [Mass/volume] in Cerebral spinal fluid"
+      "display" : "Hydroxylysine [Mass/volume] in Cerebral spinal fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13380-1",
-      "display" : "Sarcosine [Mass/volume] in Cerebral spinal fluid"
+      "display" : "Sarcosine [Mass/volume] in Cerebral spinal fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13382-7",
-      "display" : "Amino beta guanidinopropionate [Mass/volume] in Amniotic fluid"
+      "display" : "Amino beta guanidinopropionate [Mass/volume] in Amniotic fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13383-5",
-      "display" : "Alpha aminobutyrate [Mass/volume] in Amniotic fluid"
+      "display" : "Alpha aminobutyrate [Mass/volume] in Amniotic fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13384-3",
-      "display" : "Alpha aminoadipate [Mass/volume] in Amniotic fluid"
+      "display" : "Alpha aminoadipate [Mass/volume] in Amniotic fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13385-0",
-      "display" : "Beta aminoisobutyrate [Mass/volume] in Amniotic fluid"
+      "display" : "Beta aminoisobutyrate [Mass/volume] in Amniotic fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13386-8",
-      "display" : "Anserine [Mass/volume] in Amniotic fluid"
+      "display" : "Anserine [Mass/volume] in Amniotic fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13387-6",
-      "display" : "Arginine [Mass/volume] in Amniotic fluid"
+      "display" : "Arginine [Mass/volume] in Amniotic fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     },
     {
       "system" : "http://loinc.org",
+      "inactive" : true,
       "code" : "13388-4",
-      "display" : "Asparagine [Mass/volume] in Amniotic fluid"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "13389-2",
-      "display" : "Aspartate [Mass/volume] in Amniotic fluid"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "13390-0",
-      "display" : "Beta alanine [Mass/volume] in Amniotic fluid"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "13391-8",
-      "display" : "Carnosine [Mass/volume] in Amniotic fluid"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "13392-6",
-      "display" : "Citrulline [Mass/volume] in Amniotic fluid"
+      "display" : "Asparagine [Mass/volume] in Amniotic fluid",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "DISCOURAGED"
+      }]
     }]
   }
 }

@@ -8,7 +8,7 @@
     "valueCode" : "code1"
   },{
     "name" : "display",
-    "valueCode" : "Display 1X"
+    "valueString" : "Display 1X"
   },{
     "name" : "system",
     "valueUri" : "http://hl7.org/fhir/test/CodeSystem/version"

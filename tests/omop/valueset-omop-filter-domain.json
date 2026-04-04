@@ -1,0 +1,15 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "omop-filter-domain",
+  "url" : "http://hl7.org/fhir/test/ValueSet/omop-filter-domain",
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir-terminology.ohdsi.org",
+      "filter" : [{
+        "property" : "domain",
+        "op" : "=",
+        "value" : "Drug"
+      }]
+    }]
+  }
+}

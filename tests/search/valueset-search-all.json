@@ -1,0 +1,14 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/search-all",
+  "version": "6.0.0",
+  "name": "SearchAllTest",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/search"
+      }
+    ]
+  }
+}

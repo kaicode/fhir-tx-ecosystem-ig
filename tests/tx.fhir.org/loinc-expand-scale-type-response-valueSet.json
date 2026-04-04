@@ -13,7 +13,6 @@
   "expansion" : {
     "identifier" : "$uuid$",
     "timestamp" : "$instant$",
-    "total" : 12226,
     "offset" : 0,
     "parameter" : [{
       "name" : "count",
@@ -24,20 +23,21 @@
       "valueBoolean" : false
     },
     {
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
       "name" : "offset",
       "valueInteger" : 0
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "http://loinc.org|2.78"
+      "valueUri" : "http://loinc.org|2.82"
     },
     {
-      "name" : "version",
-      "valueUri" : "http://loinc.org|2.78"
+      "$optional$" : true,
+      "name" : "used-supplement",
+      "valueUri" : "http://fhir.de/CodeSystem/loinc-supplement-basis|0.9.13"
+    }],
+    "property" : [{
+      "code" : "status",
+      "uri" : "http://hl7.org/fhir/concept-properties#status"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -63,6 +63,41 @@
       "system" : "http://loinc.org",
       "code" : "100215-3",
       "display" : "Episode of care medical records Document Transplant surgery"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100216-1",
+      "display" : "Surgical synoptic report"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100217-9",
+      "display" : "Synoptic report Document Surgical oncology"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100218-7",
+      "display" : "Surgical oncology of colon cancer synoptic report"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100219-5",
+      "display" : "Surgical oncology of melanoma cancer synoptic report"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100220-3",
+      "display" : "Surgical oncology of breast cancer synoptic report"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100221-1",
+      "display" : "Surgical oncology of thyroid cancer synoptic report"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "100222-9",
+      "display" : "Surgical oncology of pancreas cancer synoptic report"
     },
     {
       "system" : "http://loinc.org",
@@ -503,41 +538,6 @@
       "system" : "http://loinc.org",
       "code" : "100516-4",
       "display" : "Pediatric urology Outpatient Progress note"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "100517-2",
-      "display" : "Pharmacogenomics Outpatient Progress note"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "100518-0",
-      "display" : "Physical medicine and rehab Outpatient Progress note"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "100519-8",
-      "display" : "Physical therapy Outpatient Progress note"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "100520-6",
-      "display" : "Plastic surgery Outpatient Progress note"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "100521-4",
-      "display" : "Podiatry Outpatient Progress note"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "100522-2",
-      "display" : "Psychiatry Hospital Progress note"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "100523-0",
-      "display" : "Psychology Outpatient Progress note"
     }]
   }
 }

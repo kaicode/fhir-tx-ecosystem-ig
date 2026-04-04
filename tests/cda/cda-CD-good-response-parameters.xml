@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parameters xmlns="http://hl7.org/fhir">
+  <parameter>
+    <name value="code"/>
+    <valueCode value="code1"/>
+  </parameter>
+  <parameter>
+    <name value="codeableConcept"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.4.642.40.50.10.1"/>
+        <code value="code1"/>
+      </coding>
+    </valueCodeableConcept>
+  </parameter>
+  <parameter>
+    <name value="display"/>
+    <valueString value="Display 1"/>
+  </parameter>
+  <parameter>
+    <name value="result"/>
+    <valueBoolean value="true"/>
+  </parameter>
+  <parameter>
+    <name value="system"/>
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.40.50.10.1"/>
+  </parameter>
+  <parameter>
+    <name value="version"/>
+    <valueString value="0.1.0"/>
+  </parameter>
+</Parameters>

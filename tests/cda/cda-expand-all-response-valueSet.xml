@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="$id$"/>
+  <url value="http://hl7.org/fhir/test/ValueSet/simple-all"/>
+  <version value="5.0.0"/>
+  <name value="SimpleValueSetAll"/>
+  <title value="Simple ValueSet All"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-04-01"/>
+  <publisher value="FHIR Project"/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.4.642.40.50.10.1"/>
+    </include>
+  </compose>
+  <expansion id="$id$">
+    <identifier value="$uuid$"/>
+    <timestamp value="$instant$"/>
+    <total value="7"/>
+    <offset value="0"/>
+    <parameter>
+      <name value="excludeNested"/>
+      <valueBoolean value="true"/>
+    </parameter>
+    <parameter>
+      <name value="used-codesystem"/>
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.40.50.10.1|0.1.0"/>
+    </parameter>
+    <parameter>
+      <name value="displayLanguage"/>
+      <valueString value="en"/>
+    </parameter>
+    <parameter>
+      <name value="version"/>
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.40.50.10.1|0.1.0"/>
+    </parameter>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.4.642.40.50.10.1"/>
+      <code value="code1"/>
+      <display value="Display 1"/>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.4.642.40.50.10.1"/>
+      <abstract value="true"/>
+      <inactive value="true"/>
+      <code value="code2"/>
+      <display value="Display 2"/>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.4.642.40.50.10.1"/>
+      <code value="code2a"/>
+      <display value="Display 2a"/>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.4.642.40.50.10.1"/>
+      <code value="code2aI"/>
+      <display value="Display 2aI"/>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.4.642.40.50.10.1"/>
+      <code value="code2aII"/>
+      <display value="Display 2aII"/>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.4.642.40.50.10.1"/>
+      <code value="code2b"/>
+      <display value="Display 2b"/>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.4.642.40.50.10.1"/>
+      <code value="code3"/>
+      <display value="Display 3"/>
+    </contains>
+  </expansion>
+</ValueSet>

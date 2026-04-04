@@ -16,12 +16,15 @@
     }]
   },
   "expansion" : {
+    "$optional-properties$" : ["id","offset"],
+    "id" : "$id$",
     "identifier" : "$uuid$",
     "timestamp" : "$instant$",
     "total" : 7,
+    "offset" : 0,
     "parameter" : [{
       "name" : "displayLanguage",
-      "valueCode" : "de,*; q=0"
+      "valueCode" : "de, *; q=0"
     },
     {
       "name" : "excludeNested",
@@ -34,11 +37,6 @@
     {
       "name" : "used-codesystem",
       "valueUri" : "http://hl7.org/fhir/test/CodeSystem/en-multi"
-    },
-    {
-      "$optional$" : true,
-      "name" : "version",
-      "valueUri" : "http://hl7.org/fhir/test/CodeSystem/en-multi"
     }],
     "contains" : [{
       "system" : "http://hl7.org/fhir/test/CodeSystem/en-multi",
@@ -47,9 +45,11 @@
       "designation" : [{
         "language" : "en",
         "use" : {
-	  "$optional$" : true,
-          "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-          "code" : "display"
+          "$optional$" : true,
+          "$optional-properties$" : ["display"],
+          "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+          "code" : "preferredForLanguage",
+          "display" : "Preferred For Language"
         },
         "value" : "Display 1"
       }]
@@ -61,9 +61,11 @@
       "designation" : [{
         "language" : "en",
         "use" : {
-	  "$optional$" : true,
-          "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-          "code" : "display"
+          "$optional$" : true,
+          "$optional-properties$" : ["display"],
+          "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+          "code" : "preferredForLanguage",
+          "display" : "Preferred For Language"
         },
         "value" : "Display 2"
       },
@@ -79,9 +81,11 @@
       "designation" : [{
         "language" : "en",
         "use" : {
-	  "$optional$" : true,
-          "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-          "code" : "display"
+          "$optional$" : true,
+          "$optional-properties$" : ["display"],
+          "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+          "code" : "preferredForLanguage",
+          "display" : "Preferred For Language"
         },
         "value" : "Display 2a"
       },
@@ -96,9 +100,11 @@
       "designation" : [{
         "language" : "en",
         "use" : {
-	  "$optional$" : true,
-          "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-          "code" : "display"
+          "$optional$" : true,
+          "$optional-properties$" : ["display"],
+          "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+          "code" : "preferredForLanguage",
+          "display" : "Preferred For Language"
         },
         "value" : "Display 2aI"
       },
@@ -113,9 +119,11 @@
       "designation" : [{
         "language" : "en",
         "use" : {
-	  "$optional$" : true,
-          "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-          "code" : "display"
+          "$optional$" : true,
+          "$optional-properties$" : ["display"],
+          "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+          "code" : "preferredForLanguage",
+          "display" : "Preferred For Language"
         },
         "value" : "Display 2aII"
       }]
@@ -127,9 +135,11 @@
       "designation" : [{
         "language" : "en",
         "use" : {
-	  "$optional$" : true,
-          "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-          "code" : "display"
+          "$optional$" : true,
+          "$optional-properties$" : ["display"],
+          "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+          "code" : "preferredForLanguage",
+          "display" : "Preferred For Language"
         },
         "value" : "Display 2b"
       }]
@@ -141,9 +151,11 @@
       "designation" : [{
         "language" : "en",
         "use" : {
-	  "$optional$" : true,
-          "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-          "code" : "display"
+          "$optional$" : true,
+          "$optional-properties$" : ["display"],
+          "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+          "code" : "preferredForLanguage",
+          "display" : "Preferred For Language"
         },
         "value" : "Display 3"
       }]

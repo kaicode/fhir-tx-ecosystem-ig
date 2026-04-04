@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parameters xmlns="http://hl7.org/fhir">
+  <parameter>
+    <name value="url"/>
+    <valueUri value="http://hl7.org/fhir/test/ValueSet/simple-all"/>
+  </parameter>
+  <parameter>
+  <parameter>
+    <name value="v3CD"/>
+    <valueCD code="code1x" codeSystem="2.16.840.1.113883.4.642.40.50.10.1"/>
+  </parameter>
+</Parameters>

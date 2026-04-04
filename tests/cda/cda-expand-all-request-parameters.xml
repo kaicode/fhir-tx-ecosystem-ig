@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parameters xmlns="http://hl7.org/fhir">
+  <parameter>
+    <name value="url"/>
+    <valueUrl value="http://hl7.org/fhir/test/ValueSet/simple-all"/>
+  </parameter>
+  <parameter>
+    <name value="excludeNested"/>
+    <valueBoolean value="true"/>
+  </parameter>
+</Parameters>

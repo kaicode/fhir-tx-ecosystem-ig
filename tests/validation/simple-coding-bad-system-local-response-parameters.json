@@ -10,6 +10,11 @@
       "resourceType" : "OperationOutcome",
       "issue" : [{
         "$optional-properties$" : ["location" ],
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+        }],
         "severity" : "error",
         "code" : "code-invalid",
         "details" : {
@@ -18,13 +23,18 @@
             "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
             "code" : "not-in-vs"
           }],
-          "text" : "The provided code 'Location#code1' was not found in the value set 'http://hl7.org/fhir/test/ValueSet/simple-all|5.0.0'"
+          "text" : "The provided code 'Location1#code1' was not found in the value set 'http://hl7.org/fhir/test/ValueSet/simple-all|5.0.0'"
         },
         "location" : ["Coding.code"],
         "expression" : ["Coding.code"]
       },
       {
         "$optional-properties$" : ["location" ],
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "Terminology_TX_System_Relative"
+        }],
         "severity" : "error",
         "code" : "invalid",
         "details" : {
@@ -40,6 +50,11 @@
       },
       {
         "$optional-properties$" : ["location" ],
+        "extension" : [{
+          "$optional$" : "!tx.fhir.org",
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueString" : "UNKNOWN_CODESYSTEM"
+        }],
         "severity" : "error",
         "code" : "not-found",
         "details" : {
@@ -48,7 +63,7 @@
             "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
             "code" : "not-found"
           }],
-          "text" : "A definition for CodeSystem Location could not be found, so the code cannot be validated"
+          "text" : "A definition for CodeSystem 'Location1' could not be found, so the code cannot be validated"
         },
         "location" : ["Coding.system"],
         "expression" : ["Coding.system"]
@@ -57,7 +72,7 @@
   },
   {
     "name" : "message",
-    "valueString" : "A definition for CodeSystem Location could not be found, so the code cannot be validated; The provided code 'Location#code1' was not found in the value set 'http://hl7.org/fhir/test/ValueSet/simple-all|5.0.0'"
+    "valueString" : "A definition for CodeSystem 'Location1' could not be found, so the code cannot be validated; Coding.system must be an absolute reference, not a local reference; The provided code 'Location1#code1' was not found in the value set 'http://hl7.org/fhir/test/ValueSet/simple-all|5.0.0'"
   },
   {
     "name" : "result",
@@ -65,10 +80,10 @@
   },
   {
     "name" : "system",
-    "valueUri" : "Location"
+    "valueUri" : "Location1"
   },
   {
     "name" : "x-unknown-system",
-    "valueCanonical" : "Location"
+    "valueCanonical" : "Location1"
   }]
 }

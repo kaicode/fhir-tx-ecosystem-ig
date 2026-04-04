@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "codeableConcept",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir-terminology.ohdsi.org",
+        "code" : "4097430.0"
+      }]
+    }
+  }]
+}

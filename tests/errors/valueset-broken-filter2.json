@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "broken-filter2",
+  "url" : "http://hl7.org/fhir/test/ValueSet/broken-filter2",
+  "version" : "5.0.0",
+  "name" : "UnknownSystem",
+  "title" : "Unknown System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-04-01",
+  "publisher" : "FHIR Project",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/test/CodeSystem/simple",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "_value" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode" : "not-applicable"
+          }]
+        }
+      }]
+    }]
+  }
+}

@@ -1,10 +1,12 @@
 {
   "resourceType" : "Parameters",
   "parameter" : [{
+    "$optional$" : true,
     "name" : "abstract",
     "valueBoolean" : false
   },
   {
+    "$optional$" : true,
     "name" : "code",
     "valueCode" : "2339-0"
   },
@@ -12,6 +14,25 @@
     "name" : "designation",
     "part" : [{
       "name" : "language",
+      "valueCode" : "cs-CZ"
+    },
+    {
+      "name" : "use",
+      "valueCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "LONG_COMMON_NAME",
+        "display" : "LONG_COMMON_NAME"
+      }
+    },
+    {
+      "name" : "value",
+      "valueString" : "Glukóza [Hmotnost/objem], systém: Krev"
+    }]
+  },
+  {
+    "name" : "designation",
+    "part" : [{
+      "name" : "language",
       "valueCode" : "de-AT"
     },
     {
@@ -92,28 +113,12 @@
     },
     {
       "name" : "use",
+	  "$optional$" : true,
       "valueCoding" : {
+        "$optional-properties$" : ["display"],
         "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-        "code" : "preferredForLanguage"
-      }
-    },
-    {
-      "name" : "value",
-      "valueString" : "Glucose [Mass/volume] in Blood"
-    }]
-  },
-  {
-    "name" : "designation",
-    "part" : [{
-      "name" : "language",
-      "valueCode" : "en-US"
-    },
-    {
-      "name" : "use",
-      "valueCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "LONG_COMMON_NAME",
-        "display" : "LONG_COMMON_NAME"
+        "code" : "preferredForLanguage",
+        "display" : "Preferred For Language"
       }
     },
     {
@@ -277,44 +282,6 @@
     "name" : "designation",
     "part" : [{
       "name" : "language",
-      "valueCode" : "es-MX"
-    },
-    {
-      "name" : "use",
-      "valueCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "LONG_COMMON_NAME",
-        "display" : "LONG_COMMON_NAME"
-      }
-    },
-    {
-      "name" : "value",
-      "valueString" : "Glucosa: Sangre : Punto temporal: Concentración de masa: Cuantitativo:"
-    }]
-  },
-  {
-    "name" : "designation",
-    "part" : [{
-      "name" : "language",
-      "valueCode" : "fr-FR"
-    },
-    {
-      "name" : "use",
-      "valueCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "LONG_COMMON_NAME",
-        "display" : "LONG_COMMON_NAME"
-      }
-    },
-    {
-      "name" : "value",
-      "valueString" : "Glucose [Masse/Volume] Sang ; Numérique"
-    }]
-  },
-  {
-    "name" : "designation",
-    "part" : [{
-      "name" : "language",
       "valueCode" : "fr-FR"
     },
     {
@@ -467,57 +434,15 @@
     "name" : "designation",
     "part" : [{
       "name" : "language",
-      "valueCode" : "uk-UA"
+      "valueCode" : "uz"
     },
     {
-      "name" : "use",
-      "valueCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "LONG_COMMON_NAME",
-        "display" : "LONG_COMMON_NAME"
-      }
+      "name" : "source",
+      "valueCanonical" : "https://terminology.dhp.uz/fhir/CodeSystem/loinc-supplement-uz|2.80"
     },
     {
       "name" : "value",
-      "valueString" : "Глюкоза [Маса/об'єм] в крові"
-    }]
-  },
-  {
-    "name" : "designation",
-    "part" : [{
-      "name" : "language",
-      "valueCode" : "uk-UA"
-    },
-    {
-      "name" : "use",
-      "valueCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "SHORTNAME",
-        "display" : "SHORTNAME"
-      }
-    },
-    {
-      "name" : "value",
-      "valueString" : "Глюкоза Кров-МасКнц"
-    }]
-  },
-  {
-    "name" : "designation",
-    "part" : [{
-      "name" : "language",
-      "valueCode" : "uk-UA"
-    },
-    {
-      "name" : "use",
-      "valueCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "LinguisticVariantDisplayName",
-        "display" : "LinguisticVariantDisplayName"
-      }
-    },
-    {
-      "name" : "value",
-      "valueString" : "Глюкоза (Кров) [Маса/об'єм]"
+      "valueString" : "Qonda glyukoza miqdori"
     }]
   },
   {
@@ -546,8 +471,12 @@
       "valueCode" : "CLASSTYPE"
     },
     {
-      "name" : "value",
+      "name" : "description",
       "valueString" : "Laboratory class"
+    },
+    {
+      "name" : "value",
+      "valueString" : "1"
     }]
   },
   {
@@ -635,11 +564,86 @@
     },
     {
       "name" : "language",
+      "valueCode" : "en-US"
+    },
+    {
+      "name" : "value",
+      "valueString" : "Blood; Chemistry; Endocrine; Endocrinology; Glu; Gluc; Glucoseur; Level; Mass concentration; Point in time; QNT; Quan; Quant; Quantitative; Random; UniversalLabOrders; WB; Whole blood"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "RELATEDNAMES2"
+    },
+    {
+      "name" : "language",
+      "valueCode" : "uk-UA"
+    },
+    {
+      "name" : "value",
+      "valueString" : "Blood; Chemistry; Endocrine; Endocrinology; Glu; Gluc; Glucoseur; Level; Mass concentration; Point in time; QNT; Quan; Quant; Quantitative; Random; UniversalLabOrders; WB; Whole blood"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "RELATEDNAMES2"
+    },
+    {
+      "name" : "language",
+      "valueCode" : "el-GR"
+    },
+    {
+      "name" : "value",
+      "valueString" : "CHEM MCnc Pt Qn Αίμα Γλυκόζη"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "RELATEDNAMES2"
+    },
+    {
+      "name" : "language",
+      "valueCode" : "it-IT"
+    },
+    {
+      "name" : "value",
+      "valueString" : "Chimica Concentrazione di Massa Punto nel tempo (episodio) Sangue"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "RELATEDNAMES2"
+    },
+    {
+      "name" : "language",
+      "valueCode" : "es-ES"
+    },
+    {
+      "name" : "value",
+      "valueString" : "Cuantitativo"
+    }]
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "RELATEDNAMES2"
+    },
+    {
+      "name" : "language",
       "valueCode" : "pt-BR"
     },
     {
       "name" : "value",
-      "valueString" : "Glicose Sg-mCnc"
+      "valueString" : "Glu; Gluc; Glucoseur; Mass concentration; Level; Point in time; Random; Blood; WB; Whole blood; Quantitative; QNT; Quant; Quan; Chemistry"
     }]
   },
   {
@@ -650,26 +654,11 @@
     },
     {
       "name" : "language",
-      "valueCode" : "es-MX"
+      "valueCode" : "zh-CN"
     },
     {
       "name" : "value",
-      "valueString" : "Glucosa: Sangre : Punto temporal: Concentración de masa: Cuantitativo:"
-    }]
-  },
-  {
-    "name" : "property",
-    "part" : [{
-      "name" : "code",
-      "valueCode" : "RELATEDNAMES2"
-    },
-    {
-      "name" : "language",
-      "valueCode" : "es-AR"
-    },
-    {
-      "name" : "value",
-      "valueString" : "glucosa:concentración de masa:punto en el tiempo:sangre:cuantitativo:"
+      "valueString" : "Glu;Gluc;右旋糖;葡糖 化学;化学检验项目;化学检验项目类;化学类;化学试验;非刺激耐受型化学检验项目;非刺激耐受型化学检验项目类;非刺激耐受型化学试验;非刺激耐受型化学试验类 可用数量表示的;定量性;数值型;数量型;连续数值型标尺 时刻;随机;随意;瞬间 水平;浓度;质量浓度(单位体积) 血;血液"
     }]
   },
   {
@@ -684,52 +673,7 @@
     },
     {
       "name" : "value",
-      "valueString" : "Glucose /Blut"
-    }]
-  },
-  {
-    "name" : "property",
-    "part" : [{
-      "name" : "code",
-      "valueCode" : "RELATEDNAMES2"
-    },
-    {
-      "name" : "language",
-      "valueCode" : "en-US"
-    },
-    {
-      "name" : "value",
-      "valueString" : "Glucose [Mass/volume] in Blood"
-    }]
-  },
-  {
-    "name" : "property",
-    "part" : [{
-      "name" : "code",
-      "valueCode" : "RELATEDNAMES2"
-    },
-    {
-      "name" : "language",
-      "valueCode" : "nl-NL"
-    },
-    {
-      "name" : "value",
-      "valueString" : "Glucose [massa/volume] in bloed"
-    }]
-  },
-  {
-    "name" : "property",
-    "part" : [{
-      "name" : "code",
-      "valueCode" : "RELATEDNAMES2"
-    },
-    {
-      "name" : "language",
-      "valueCode" : "fr-FR"
-    },
-    {
-      "name" : "value",
-      "valueString" : "Glucose [Masse/Volume] Sang ; Numérique"
+      "valueString" : "Glucose /B"
     }]
   },
   {
@@ -744,7 +688,7 @@
     },
     {
       "name" : "value",
-      "valueString" : "Glucose [Masse/Volumen] in Blut"
+      "valueString" : "Glukose"
     }]
   },
   {
@@ -755,11 +699,11 @@
     },
     {
       "name" : "language",
-      "valueCode" : "en-US"
+      "valueCode" : "et-EE"
     },
     {
       "name" : "value",
-      "valueString" : "Glucose Bld-mCnc"
+      "valueString" : "Juhuslik Kvantitatiivne Veri"
     }]
   },
   {
@@ -770,56 +714,11 @@
     },
     {
       "name" : "language",
-      "valueCode" : "en-US"
+      "valueCode" : "ru-RU"
     },
     {
       "name" : "value",
-      "valueString" : "Glucose, Blood"
-    }]
-  },
-  {
-    "name" : "property",
-    "part" : [{
-      "name" : "code",
-      "valueCode" : "RELATEDNAMES2"
-    },
-    {
-      "name" : "language",
-      "valueCode" : "uk-UA"
-    },
-    {
-      "name" : "value",
-      "valueString" : "Глюкоза (Кров) [Маса/об'єм]"
-    }]
-  },
-  {
-    "name" : "property",
-    "part" : [{
-      "name" : "code",
-      "valueCode" : "RELATEDNAMES2"
-    },
-    {
-      "name" : "language",
-      "valueCode" : "uk-UA"
-    },
-    {
-      "name" : "value",
-      "valueString" : "Глюкоза [Маса/об'єм] в крові"
-    }]
-  },
-  {
-    "name" : "property",
-    "part" : [{
-      "name" : "code",
-      "valueCode" : "RELATEDNAMES2"
-    },
-    {
-      "name" : "language",
-      "valueCode" : "uk-UA"
-    },
-    {
-      "name" : "value",
-      "valueString" : "Глюкоза Кров-МасКнц"
+      "valueString" : "Количественный Кровь Массовая концентрация Точка во времени;Момент"
     }]
   },
   {
@@ -878,11 +777,20 @@
     }]
   },
   {
+    "$optional$" : true,
     "name" : "system",
     "valueUri" : "http://loinc.org"
   },
   {
+    "name" : "used-supplement",
+    "valueCanonical" : "https://terminology.dhp.uz/fhir/CodeSystem/loinc-supplement-uz|2.80"
+  },
+  {
+    "name" : "used-supplement",
+    "valueCanonical" : "http://fhir.de/CodeSystem/loinc-supplement-basis|0.9.13"
+  },
+  {
     "name" : "version",
-    "valueString" : "2.81"
+    "valueString" : "2.82"
   }]
 }

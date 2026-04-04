@@ -12,7 +12,7 @@
   "publisher" : "FHIR Project",
   "compose" : {
     "extension" : [{
-      "url" : "http://hl7.org/fhir/tools/StructureDefinion/valueset-expansion-param",
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-expansion-parameter",
       "extension" : [{
         "url" : "name",
         "valueCode" : "displayLanguage"

@@ -45,3 +45,5 @@ translations/
 snowstormx
 
 Requirements-fromNarrative.json
+
+tests/related/.claude/worktrees/clever-babbage

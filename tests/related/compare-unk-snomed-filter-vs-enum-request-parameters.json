@@ -1,0 +1,47 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "thisValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-unk-2a",
+      "version" : "1.0.0",
+      "name" : "CompareUnk2A",
+      "title" : "Unknown - SNOMED is-a 404684003",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://snomed.info/sct",
+          "filter" : [{
+            "property" : "concept",
+            "op" : "is-a",
+            "value" : "404684003"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "otherValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-unk-2b",
+      "version" : "1.0.0",
+      "name" : "CompareUnk2B",
+      "title" : "Unknown - SNOMED enum {73211009}",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://snomed.info/sct",
+          "concept" : [{
+            "code" : "73211009"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "diagnostics",
+    "valueBoolean" : true
+  }]
+}

@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-ver-6a",
+  "version": "1.0.0",
+  "name": "CompareVer6A",
+  "title": "Version - import(v1-pinned) + {C}",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/test/ValueSet/compare-ver-1a"
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+        "concept": [
+          {
+            "code": "C"
+          }
+        ]
+      }
+    ]
+  }
+}

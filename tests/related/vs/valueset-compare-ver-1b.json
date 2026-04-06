@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-ver-1b",
+  "version": "1.0.0",
+  "name": "CompareVer1B",
+  "title": "Version - is-a A pinned to CS1 v2",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A"
+          }
+        ],
+        "version": "2.0.0"
+      }
+    ]
+  }
+}

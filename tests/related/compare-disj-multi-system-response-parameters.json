@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "extra-codes",
+    "valueString" : "delta"
+  },
+  {
+    "name" : "message",
+    "valueString" : "No shared codes between the value sets http://hl7.org/fhir/test/ValueSet/compare-disj-4a|1.0.0 and http://hl7.org/fhir/test/ValueSet/compare-disj-4b|1.0.0"
+  },
+  {
+    "name" : "missing-codes",
+    "valueString" : "alpha"
+  },
+  {
+    "name" : "performed-expansion",
+    "valueBoolean" : false
+  },
+  {
+    "name" : "result",
+    "valueCode" : "disjoint"
+  }]
+}

@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "common-codes",
+    "valueString" : "root,A,A1,A2,B"
+  },
+  {
+    "name" : "extra-codes",
+    "valueString" : "B1,B2"
+  },
+  {
+    "name" : "message",
+    "valueString" : "The valueSet http://hl7.org/fhir/test/ValueSet/compare-expsub-1a|1.0.0 is a seb-set of the valueSet http://hl7.org/fhir/test/ValueSet/compare-expsub-1b|1.0.0"
+  },
+  {
+    "name" : "performed-expansion",
+    "valueBoolean" : true
+  },
+  {
+    "name" : "result",
+    "valueCode" : "subset"
+  }]
+}

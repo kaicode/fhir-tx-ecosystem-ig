@@ -1,8 +1,16 @@
 {
   "resourceType" : "Parameters",
   "parameter" : [{
+    "name" : "common-codes",
+    "valueString" : "code1,code2,code2a,code2b,code3"
+  },
+  {
     "name" : "message",
     "valueString" : "The value sets http://hl7.org/fhir/test/ValueSet/simple-enumerated|5.0.0 and http://hl7.org/fhir/test/ValueSet/simple-enumerated|5.0.0 contain the same codes"
+  },
+  {
+    "name" : "performed-expansion",
+    "valueBoolean" : false
   },
   {
     "name" : "result",

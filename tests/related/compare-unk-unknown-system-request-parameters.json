@@ -1,0 +1,51 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "thisValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-unk-3a",
+      "version" : "1.0.0",
+      "name" : "CompareUnk3A",
+      "title" : "Unknown - unknown code system",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://example.org/unknown-cs",
+          "concept" : [{
+            "code" : "X"
+          },
+          {
+            "code" : "Y"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "otherValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-unk-3b",
+      "version" : "1.0.0",
+      "name" : "CompareUnk3B",
+      "title" : "Unknown - unknown code system (other codes)",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://example.org/unknown-cs",
+          "concept" : [{
+            "code" : "Y"
+          },
+          {
+            "code" : "Z"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "diagnostics",
+    "valueBoolean" : true
+  }]
+}

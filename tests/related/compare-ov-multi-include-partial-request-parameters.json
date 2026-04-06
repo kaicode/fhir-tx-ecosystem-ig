@@ -1,0 +1,65 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "thisValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-ov-3a",
+      "version" : "1.0.0",
+      "name" : "CompareOv3A",
+      "title" : "Overlap - is-a A + {B1} (multi-include)",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+          "version" : "1.0.0",
+          "filter" : [{
+            "property" : "concept",
+            "op" : "is-a",
+            "value" : "A"
+          }]
+        },
+        {
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+          "version" : "1.0.0",
+          "concept" : [{
+            "code" : "B1"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "otherValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-ov-3b",
+      "version" : "1.0.0",
+      "name" : "CompareOv3B",
+      "title" : "Overlap - is-a B + {A1} (multi-include)",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+          "version" : "1.0.0",
+          "filter" : [{
+            "property" : "concept",
+            "op" : "is-a",
+            "value" : "B"
+          }]
+        },
+        {
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+          "version" : "1.0.0",
+          "concept" : [{
+            "code" : "A1"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "diagnostics",
+    "valueBoolean" : true
+  }]
+}

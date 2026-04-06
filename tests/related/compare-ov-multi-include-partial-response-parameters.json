@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "common-codes",
+    "valueString" : "A1,B1"
+  },
+  {
+    "name" : "extra-codes",
+    "valueString" : "B,B2"
+  },
+  {
+    "name" : "message",
+    "valueString" : "Both value sets http://hl7.org/fhir/test/ValueSet/compare-ov-3a|1.0.0 and http://hl7.org/fhir/test/ValueSet/compare-ov-3b|1.0.0 contain the codes the other doesn't, but there is some overlap"
+  },
+  {
+    "name" : "missing-codes",
+    "valueString" : "A,A2"
+  },
+  {
+    "name" : "performed-expansion",
+    "valueBoolean" : true
+  },
+  {
+    "name" : "result",
+    "valueCode" : "overlapping"
+  }]
+}

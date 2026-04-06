@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-sub-3b",
+  "version": "1.0.0",
+  "name": "CompareSub3B",
+  "title": "Superset - imports sub-3a + {B1}",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/test/ValueSet/compare-sub-3a"
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+        "concept": [
+          {
+            "code": "B1"
+          }
+        ]
+      }
+    ]
+  }
+}

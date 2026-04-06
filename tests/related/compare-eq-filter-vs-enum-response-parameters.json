@@ -1,0 +1,15 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "message",
+    "valueString" : "The value sets http://hl7.org/fhir/test/ValueSet/compare-eq-4a|1.0.0 and http://hl7.org/fhir/test/ValueSet/compare-eq-4b|1.0.0 contain the same codes"
+  },
+  {
+    "name" : "performed-expansion",
+    "valueBoolean" : true
+  },
+  {
+    "name" : "result",
+    "valueCode" : "same"
+  }]
+}

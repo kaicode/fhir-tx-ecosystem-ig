@@ -5,6 +5,10 @@
     "valueString" : "The valueSet http://hl7.org/fhir/test/ValueSet/list-1 is a super-set of the valueSet http://hl7.org/fhir/test/ValueSet/list-2"
   },
   {
+    "name" : "performed-expansion",
+    "valueBoolean" : false
+  },
+  {
     "name" : "result",
     "valueCode" : "superset"
   }]

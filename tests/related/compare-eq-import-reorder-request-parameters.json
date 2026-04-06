@@ -1,0 +1,45 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "thisValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-eq-6a",
+      "version" : "1.0.0",
+      "name" : "CompareEq6A",
+      "title" : "Equivalent - imports in order 1",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "valueSet" : ["http://hl7.org/fhir/test/ValueSet/compare-eq-6-child1"]
+        },
+        {
+          "valueSet" : ["http://hl7.org/fhir/test/ValueSet/compare-eq-6-child2"]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "otherValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-eq-6b",
+      "version" : "1.0.0",
+      "name" : "CompareEq6B",
+      "title" : "Equivalent - imports in order 2",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "valueSet" : ["http://hl7.org/fhir/test/ValueSet/compare-eq-6-child2"]
+        },
+        {
+          "valueSet" : ["http://hl7.org/fhir/test/ValueSet/compare-eq-6-child1"]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "diagnostics",
+    "valueBoolean" : true
+  }]
+}

@@ -1,8 +1,20 @@
 {
   "resourceType" : "Parameters",
   "parameter" : [{
+    "name" : "extra-codes",
+    "valueString" : "code2a,code2b"
+  },
+  {
     "name" : "message",
     "valueString" : "No shared codes between the value sets http://hl7.org/fhir/test/ValueSet/list-1 and http://hl7.org/fhir/test/ValueSet/list-1"
+  },
+  {
+    "name" : "missing-codes",
+    "valueString" : "code1,code2,code3"
+  },
+  {
+    "name" : "performed-expansion",
+    "valueBoolean" : false
   },
   {
     "name" : "result",

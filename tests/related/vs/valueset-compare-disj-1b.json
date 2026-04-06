@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/test/ValueSet/compare-disj-1b",
+  "version": "1.0.0",
+  "name": "CompareDisj1B",
+  "title": "Disjoint - is-a X from CS2",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/test/CodeSystem/compare-cs2",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "X"
+          }
+        ]
+      }
+    ]
+  }
+}

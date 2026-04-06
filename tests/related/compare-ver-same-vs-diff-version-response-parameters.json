@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "common-codes",
+    "valueString" : "A,A1,A2,B1"
+  },
+  {
+    "name" : "message",
+    "valueString" : "The valueSet http://hl7.org/fhir/test/ValueSet/compare-ver-5A|2.0.0 is a super-set of the valueSet http://hl7.org/fhir/test/ValueSet/compare-ver-5B|2.0.0"
+  },
+  {
+    "name" : "missing-codes",
+    "valueString" : "A3"
+  },
+  {
+    "name" : "performed-expansion",
+    "valueBoolean" : true
+  },
+  {
+    "name" : "result",
+    "valueCode" : "superset"
+  }]
+}

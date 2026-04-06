@@ -5,6 +5,10 @@
     "valueString" : "The value sets http://hl7.org/fhir/test/ValueSet/simple-filter-regex-prop|5.0.0 and http://hl7.org/fhir/test/ValueSet/simple-filter-regex-prop|5.0.0 contain the same codes"
   },
   {
+    "name" : "performed-expansion",
+    "valueBoolean" : false
+  },
+  {
     "name" : "result",
     "valueCode" : "same"
   }]

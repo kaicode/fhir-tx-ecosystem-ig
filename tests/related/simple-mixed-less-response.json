@@ -1,12 +1,20 @@
 {
   "resourceType" : "Parameters",
   "parameter" : [{
-    "name" : "expansion",
-    "valueBoolean" : true
+    "name" : "common-codes",
+    "valueString" : "code2a,code2aI,code2aII"
+  },
+  {
+    "name" : "extra-codes",
+    "valueString" : "code1"
   },
   {
     "name" : "message",
     "valueString" : "The valueSet http://hl7.org/fhir/test/ValueSet/list-1m is a seb-set of the valueSet http://hl7.org/fhir/test/ValueSet/list-2m"
+  },
+  {
+    "name" : "performed-expansion",
+    "valueBoolean" : true
   },
   {
     "name" : "result",

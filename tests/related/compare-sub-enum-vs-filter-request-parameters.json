@@ -1,0 +1,50 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "thisValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-sub-2a",
+      "version" : "1.0.0",
+      "name" : "CompareSub2A",
+      "title" : "Subset - enum {A1, A2} (smaller)",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+          "concept" : [{
+            "code" : "A1"
+          },
+          {
+            "code" : "A2"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "otherValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-sub-2b",
+      "version" : "1.0.0",
+      "name" : "CompareSub2B",
+      "title" : "Subset - is-a A (larger)",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+          "filter" : [{
+            "property" : "concept",
+            "op" : "is-a",
+            "value" : "A"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "diagnostics",
+    "valueBoolean" : true
+  }]
+}

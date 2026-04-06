@@ -1,0 +1,74 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "thisValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-expeq-2a",
+      "version" : "1.0.0",
+      "name" : "CompareExpEq2A",
+      "title" : "Equivalent (expansion) - is-a root minus {A2, B2}",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+          "version" : "1.0.0",
+          "filter" : [{
+            "property" : "concept",
+            "op" : "is-a",
+            "value" : "root"
+          }]
+        }],
+        "exclude" : [{
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+          "version" : "1.0.0",
+          "concept" : [{
+            "code" : "A2"
+          },
+          {
+            "code" : "B2"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "otherValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-expeq-2b",
+      "version" : "1.0.0",
+      "name" : "CompareExpEq2B",
+      "title" : "Equivalent (expansion) - enumerated {root, A, A1, B, B1, C}",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+          "version" : "1.0.0",
+          "concept" : [{
+            "code" : "root"
+          },
+          {
+            "code" : "A"
+          },
+          {
+            "code" : "A1"
+          },
+          {
+            "code" : "B"
+          },
+          {
+            "code" : "B1"
+          },
+          {
+            "code" : "C"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "diagnostics",
+    "valueBoolean" : true
+  }]
+}

@@ -16,7 +16,7 @@
           },{
             "property" : "concept",
             "op" : "regex",
-            "value" : "code"
+            "value" : "code(.)*"
           }]
         }]
       }
@@ -33,7 +33,7 @@
           "filter" : [{
             "property" : "concept",
             "op" : "regex",
-            "value" : "code"
+            "value" : "code(.)*"
           },{
             "property" : "concept",
             "op" : "is-a",
@@ -42,5 +42,9 @@
         }]
       }
     }
+  },
+  {
+    "name" : "diagnostics",
+    "valueBoolean" : true
   }]
 }

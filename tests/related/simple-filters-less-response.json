@@ -2,10 +2,14 @@
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "message",
-    "valueString" : "The valueSet http://hl7.org/fhir/test/ValueSet/list-1x is a seb-set of the valueSet http://hl7.org/fhir/test/ValueSet/list-2x"
+    "valueString" : "Both the value sets http://hl7.org/fhir/test/ValueSet/list-1x and http://hl7.org/fhir/test/ValueSet/list-2x are empty"
+  },
+  {
+    "name" : "performed-expansion",
+    "valueBoolean" : true
   },
   {
     "name" : "result",
-    "valueCode" : "subset"
+    "valueCode" : "empty"
   }]
 }

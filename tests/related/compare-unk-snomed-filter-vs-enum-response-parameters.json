@@ -1,0 +1,15 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "message",
+    "valueString" : "Unable to compare http://hl7.org/fhir/test/ValueSet/compare-unk-2a|1.0.0 and http://hl7.org/fhir/test/ValueSet/compare-unk-2b|1.0.0: This expansion failed: The value set 'http://hl7.org/fhir/test/ValueSet/compare-unk-2a' expansion has too many codes to produce (>10000)"
+  },
+  {
+    "name" : "performed-expansion",
+    "valueBoolean" : true
+  },
+  {
+    "name" : "result",
+    "valueCode" : "indeterminate"
+  }]
+}

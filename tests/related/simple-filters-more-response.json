@@ -1,8 +1,20 @@
 {
   "resourceType" : "Parameters",
   "parameter" : [{
+    "name" : "common-codes",
+    "valueString" : "code2a,code2aI,code2aII"
+  },
+  {
     "name" : "message",
     "valueString" : "The valueSet http://hl7.org/fhir/test/ValueSet/list-1x is a super-set of the valueSet http://hl7.org/fhir/test/ValueSet/list-2x"
+  },
+  {
+    "name" : "missing-codes",
+    "valueString" : "code2,code2b"
+  },
+  {
+    "name" : "performed-expansion",
+    "valueBoolean" : true
   },
   {
     "name" : "result",

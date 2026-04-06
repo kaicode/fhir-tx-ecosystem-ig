@@ -42,5 +42,9 @@
         }]
       }
     }
+  },
+  {
+    "name" : "diagnostics",
+    "valueBoolean" : true
   }]
 }

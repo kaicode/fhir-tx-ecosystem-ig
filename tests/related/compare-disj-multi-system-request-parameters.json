@@ -1,0 +1,61 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "thisValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-disj-4a",
+      "version" : "1.0.0",
+      "name" : "CompareDisj4A",
+      "title" : "Disjoint - CS1 branch A + CS3 {alpha}",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+          "filter" : [{
+            "property" : "concept",
+            "op" : "is-a",
+            "value" : "A"
+          }]
+        },
+        {
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs3",
+          "concept" : [{
+            "code" : "alpha"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "otherValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-disj-4b",
+      "version" : "1.0.0",
+      "name" : "CompareDisj4B",
+      "title" : "Disjoint - CS2 branch X + CS3 {delta}",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs2",
+          "filter" : [{
+            "property" : "concept",
+            "op" : "is-a",
+            "value" : "X"
+          }]
+        },
+        {
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs3",
+          "concept" : [{
+            "code" : "delta"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "diagnostics",
+    "valueBoolean" : true
+  }]
+}

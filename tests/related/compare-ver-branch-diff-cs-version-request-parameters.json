@@ -1,0 +1,51 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "thisValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-ver-3a",
+      "version" : "1.0.0",
+      "name" : "CompareVer3A",
+      "title" : "Version - is-a B pinned to CS1 v1",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+          "version" : "1.0.0",
+          "filter" : [{
+            "property" : "concept",
+            "op" : "is-a",
+            "value" : "B"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "otherValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-ver-3b",
+      "version" : "1.0.0",
+      "name" : "CompareVer3B",
+      "title" : "Version - is-a B pinned to CS1 v2",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+          "version" : "2.0.0",
+          "filter" : [{
+            "property" : "concept",
+            "op" : "is-a",
+            "value" : "B"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "diagnostics",
+    "valueBoolean" : true
+  }]
+}

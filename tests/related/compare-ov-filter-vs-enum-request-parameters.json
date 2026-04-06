@@ -1,0 +1,50 @@
+{
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "thisValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-ov-2a",
+      "version" : "1.0.0",
+      "name" : "CompareOv2A",
+      "title" : "Overlap - is-a A",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+          "filter" : [{
+            "property" : "concept",
+            "op" : "is-a",
+            "value" : "A"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "otherValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "url" : "http://hl7.org/fhir/test/ValueSet/compare-ov-2b",
+      "version" : "1.0.0",
+      "name" : "CompareOv2B",
+      "title" : "Overlap - enum {A2, B1}",
+      "status" : "active",
+      "compose" : {
+        "include" : [{
+          "system" : "http://hl7.org/fhir/test/CodeSystem/compare-cs1",
+          "concept" : [{
+            "code" : "A2"
+          },
+          {
+            "code" : "B1"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "name" : "diagnostics",
+    "valueBoolean" : true
+  }]
+}

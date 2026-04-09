@@ -23,7 +23,8 @@
     "name" : "simple-cases",
     "mode" : "general",
     "description" : "basic tests, setting up for the API tests to come",
-    "setup" : ["simple/codesystem-simple.json", "simple/valueset-all.json", "simple/valueset-active.json", "simple/valueset-inactive.json", "simple/valueset-enumerated.json", "simple/valueset-enumerated-bad.json", "simple/valueset-filter-isa.json", "simple/valueset-filter-property.json", "simple/valueset-filter-regex.json", "simple/valueset-filter-regex2.json", "simple/valueset-filter-regex-prop.json"],
+    "setup" : ["simple/codesystem-simple.json", "simple/valueset-all.json", "simple/valueset-active.json", "simple/valueset-inactive.json", "simple/valueset-enumerated.json", "simple/valueset-enumerated-bad.json", "simple/valueset-filter-isa.json", "simple/valueset-filter-property.json", "simple/valueset-filter-regex.json", 
+    "simple/valueset-filter-regex2.json", "simple/valueset-filter-regex-prop.json"],
     "tests" :[
       {
         "name" : "simple-expand-all",
@@ -3038,7 +3039,13 @@
     "description" : "Testing handling a code system fragment",
     "setup" : ["fragment/codesystem-fragment.json", "fragment/valueset-fragment.json"],
     "tests" : [
-
+      {
+        "name" : "fragment-expansion",
+        "description" : "check that the fragment is reported correctly",
+        "operation" : "expand",
+        "request" : "fragment/fragment-expand-request.json",
+        "response" :  "fragment/fragment-expand-response.json"
+      },
       {
         "name" : "validation-fragment-code-good",
         "description" : "if a code is a in a fragment, then it's all ok",
@@ -5661,6 +5668,26 @@
         "description" : "Check that the minimum expected things are found in the server TerminologyCapabilities for ICD-11 servers",
         "operation" : "term-caps",
         "response" : "icd-11/capterms.json"
+      }
+    ]
+  },{
+    "name" : "regex-bad",
+    "description" : "Bad Regex - denial of service attack",
+    "setup" : ["regex-bad/codesystem-bad-regex.json", "regex-bad/valueset-regex-bad.json"],
+    "tests" : [
+      {
+        "name" : "expand-regex-bad",
+        "description" : "Check expand is safe from catastrophic regex",
+        "operation" : "expand",
+        "request": "regex-bad/expand-regex-bad-request.json",
+        "response" : "regex-bad/expand-regex-bad-response.json"
+      },
+      {
+        "name" : "validate-regex-bad",
+        "description" : "Check validate is safe from catastrophic regex",
+        "operation" : "validate-code",
+        "request": "regex-bad/validate-regex-bad-request.json",
+        "response" : "regex-bad/validate-regex-bad-response.json"
       }
     ]
   }, {

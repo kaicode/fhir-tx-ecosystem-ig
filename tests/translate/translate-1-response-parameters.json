@@ -10,7 +10,7 @@
       }
     },
     {
-      "$optional$" : true,
+      "$optional$" : "version:5",
       "name" : "equivalence",
       "valueCode" : "equivalent"
     },
@@ -19,7 +19,7 @@
       "valueCanonical" : "http://hl7.org/fhir/test/ConceptMap/full|0.1.0"
     },
     {
-      "$optional$" : true,
+      "$optional$" : "version:4",
       "name" : "relationship",
       "valueCode" : "equivalent"
     }]

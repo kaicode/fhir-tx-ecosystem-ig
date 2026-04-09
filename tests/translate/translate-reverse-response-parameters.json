@@ -10,12 +10,12 @@
       }
     },
     {
-      "$optional$" : true,
+      "$optional$" : "version:4",
       "name" : "relationship",
       "valueCode" : "equivalent"
     },
     {
-      "$optional$" : true,
+      "$optional$" : "version:5",
       "name" : "equivalence",
       "valueCode" : "equivalent"
     },

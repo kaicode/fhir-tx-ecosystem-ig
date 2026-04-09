@@ -11,7 +11,7 @@
       }
     },
     {
-      "$optional$" : true,
+      "$optional$" : "version:5",
       "name" : "equivalence",
       "valueCode" : "equivalent"
     },
@@ -20,7 +20,7 @@
       "valueCanonical" : "https://fhir-terminology.ohdsi.org/ConceptMap/44819102|"
     },
     {
-      "$optional$" : true,
+      "$optional$" : "version:4",
       "name" : "relationship",
       "valueCode" : "equivalent"
     }]

@@ -1,0 +1,84 @@
+{
+  "$optional-properties$" : ["id", "date", "publisher", "compose"],
+  "resourceType" : "ValueSet",
+  "id" : "$id$",
+  "url" : "http://hl7.org/fhir/test/ValueSet/fragment",
+  "version" : "5.0.0",
+  "name" : "FragmentValueSetAll",
+  "title" : "Fragment ValueSet All",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-04-01",
+  "expansion" : {
+    "$optional-properties$" : ["id", "offset"],
+    "id" : "$id$",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed-reason",
+      "valueString" : "This extension is based on a fragment of the code system http://hl7.org/fhir/test/CodeSystem/fragment"
+    }],
+    "identifier" : "$uuid$",
+    "timestamp" : "$instant$",
+    "total" : 7,
+    "parameter" : [{
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://hl7.org/fhir/test/CodeSystem/fragment|0.1.0"
+    },
+    {
+      "name" : "used-fragment",
+      "valueUri" : "http://hl7.org/fhir/test/CodeSystem/fragment|0.1.0"
+    }],
+    "property" : [{
+      "code" : "status",
+      "uri" : "http://hl7.org/fhir/concept-properties#status"
+    }],
+    "contains" : [{
+      "system" : "http://hl7.org/fhir/test/CodeSystem/fragment",
+      "code" : "code1",
+      "display" : "Display 1"
+    },
+    {
+      "system" : "http://hl7.org/fhir/test/CodeSystem/fragment",
+      "abstract" : true,
+      "inactive" : true,
+      "code" : "code2",
+      "display" : "Display 2",
+      "property" : [{
+        "code" : "status",
+        "valueCode" : "retired"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/test/CodeSystem/fragment",
+      "code" : "code2a",
+      "display" : "Display 2a"
+    },
+    {
+      "system" : "http://hl7.org/fhir/test/CodeSystem/fragment",
+      "code" : "code2aI",
+      "display" : "Display 2aI"
+    },
+    {
+      "system" : "http://hl7.org/fhir/test/CodeSystem/fragment",
+      "code" : "code2aII",
+      "display" : "Display 2aII"
+    },
+    {
+      "system" : "http://hl7.org/fhir/test/CodeSystem/fragment",
+      "code" : "code2b",
+      "display" : "Display 2b"
+    },
+    {
+      "system" : "http://hl7.org/fhir/test/CodeSystem/fragment",
+      "code" : "code3",
+      "display" : "Display 3"
+    }]
+  }
+}

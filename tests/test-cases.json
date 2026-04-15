@@ -4636,6 +4636,13 @@
         "response" : "sct/expand-pc-filter-response.json"
       },
       {
+        "name" : "expand-implicit-ecl-clinical-finding-count",
+        "description" : "Expand implicit SNOMED ValueSet URL with fhir_vs=ecl/%3C404684003 (descendants of Clinical finding) and count=0 (no member rows; total only). expansion.total (100) is a placeholder; marked optional so subontology counts can differ.",
+        "operation" : "expand",
+        "request" : "sct/expand-implicit-ecl-clinical-finding-count-request.json",
+        "response" : "sct/expand-implicit-ecl-clinical-finding-count-response.json"
+      },
+      {
         "name" : "validate-code-implied-1",
         "description" : "Check that implied value sets work (isa)",
         "operation" : "validate-code",

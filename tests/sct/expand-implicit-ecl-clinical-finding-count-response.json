@@ -1,0 +1,26 @@
+{
+  "$optional-properties$" : ["id", "date", "publisher", "compose"],
+  "resourceType" : "ValueSet",
+  "id" : "$id$",
+  "expansion" : {
+    "$optional-properties$" : ["id", "offset", "total"],
+    "extension" : [{
+      "$optional$" : true,
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "id" : "$id$",
+    "identifier" : "$uuid$",
+    "timestamp" : "$instant$",
+    "total" : 100,
+    "parameter" : [{
+      "name" : "count",
+      "valueInteger" : 0
+    },
+    {
+      "$optional$" : true,
+      "name" : "used-codesystem",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+    }]
+  }
+}

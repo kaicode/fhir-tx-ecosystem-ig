@@ -31,14 +31,14 @@ jobs:
         id: zip
         run: |
           set -euo pipefail
-          mkdir -p site
+          mkdir -p site/snomed-feed
           ZIP_NAME="snomed-tx-test-subontology.zip"
           cd tx-source
-          zip -r -X "../site/${ZIP_NAME}" snomed -x '.*'
+          zip -r -X "../site/snomed-feed/${ZIP_NAME}" snomed -x '.*'
           cd ..
           echo "name=${ZIP_NAME}" >> "$GITHUB_OUTPUT"
-          echo "length=$(stat -c%s "site/${ZIP_NAME}")" >> "$GITHUB_OUTPUT"
-          echo "md5=$(md5sum "site/${ZIP_NAME}" | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+          echo "length=$(stat -c%s "site/snomed-feed/${ZIP_NAME}")" >> "$GITHUB_OUTPUT"
+          echo "md5=$(md5sum "site/snomed-feed/${ZIP_NAME}" | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
 
       - name: Generate syndication feed
         env:
@@ -49,7 +49,7 @@ jobs:
         run: |
           set -euo pipefail
           UPDATED="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          cat > site/feed.xml <<EOF
+          cat > site/snomed-feed/feed.xml <<EOF
           <?xml version="1.0" encoding="utf-8"?>
           <feed xmlns="http://www.w3.org/2005/Atom" xmlns:ncts="http://ns.electronichealth.net.au/ncts/syndication/asf/extensions/1.0.0" xmlns:sct="http://snomed.info/syndication/sct-extension/1.0.0">
             <title>TX Test SNOMED CT Dummy Syndication Feed</title>
